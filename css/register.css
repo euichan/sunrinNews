@@ -33,26 +33,45 @@ body {
 }
 
 #student_container {
+        transition: 0.5s;
      position: relative;
      display: inline-block;
      /* border: 1px solid black; */
      margin: 10px;
 }
-
+#student_container:hover {
+     transition: 0.5s;
+    transform: scale(1.08,1.08);
+    cursor:pointer;
+}
 #club_container {
+         transition: 0.5s;
+
      position: relative;
      display: inline-block;
      /* border: 1px solid black; */
      margin: 10px;
 }
+#club_container:hover {
+     transition: 0.5s;
+    transform: scale(1.08,1.08);
+        cursor:pointer;
 
+}
 #school_container {
+         transition: 0.5s;
+
      position: relative;
      display: inline-block;
      /* border: 1px solid black; */
      margin: 10px;
 }
+#school_container:hover {
+     transition: 0.5s;
+    transform: scale(1.08,1.08);
+        cursor:pointer;
 
+}
 #card_container img {
      max-width: 200px;
 }

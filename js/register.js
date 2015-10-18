@@ -7,10 +7,28 @@ var sex;
 var img;
 
 function seungie(e) {
+    var url=window.location.href.split("/");
+    
     if (e.id == "prev_btn") {
         $.fn.fullpage.moveSlideLeft();
-        page--;
-        return;
+        switch(url[5]){
+        case "secondPage":
+            page=0;
+            break;
+        case "3rdPage":
+            page=1;
+            break;
+        }
+          return;
+    }
+    switch(url[5]){
+        case "secondPage":
+            page=2;
+            break;
+        
+        case undefined:
+            page=1;
+            break;
     }
     if (page == 0) {
         //첫번째 페이지
@@ -48,5 +66,4 @@ function seungie(e) {
         return;
     }
     $.fn.fullpage.moveSlideRight();
-    page++;
 }

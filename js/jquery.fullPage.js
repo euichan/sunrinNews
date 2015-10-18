@@ -5,6 +5,7 @@
  *
  * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
  */
+var destiny = null;
 $(document).ready(function(){
  
         $('body').on("selectstart", function(event){ return false; });
@@ -1150,7 +1151,6 @@ $(document).ready(function(){
             }
 
             var currentSlide = slides.find(SLIDE_ACTIVE_SEL);
-            var destiny = null;
 
             if(direction === 'prev'){
                 destiny = currentSlide.prev(SLIDE_SEL);
