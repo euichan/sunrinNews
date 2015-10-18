@@ -1,0 +1,39 @@
+body {
+    background-image: url('../img/main/background_sample.png');
+    background-repeat: no-repeat;
+    
+}
+
+#topbar{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #FFFFFF;
+}
+
+#logo_container{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    margin: 10px;
+    margin-left: 40px;
+}
+#search_box {
+     border: 2px solid #CCCCCC;
+     width: 250px;
+     height: 30px;
+     margin: 
+     
+}
+
+#search_box_container {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 35%;
+    
+     
+}

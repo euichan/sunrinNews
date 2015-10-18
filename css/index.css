@@ -1,0 +1,162 @@
+#topbar{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+#logo_container{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+#login_container{
+    position: inherit;
+    display: inline-block;
+    float: right;
+    border: 1px solid gray;
+    width: 430px;
+    margin: 20px;
+}
+
+.banner_container{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/main/banner_sample.png');
+    background-repeat: no-repeat;
+}
+
+
+.banner_title{
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#menubar{
+    position: relative;
+    border: 1px solid #CECFD0;
+    width: 100%;
+    height: 80px;
+}
+
+
+/* note: border 속성 신경쓸것 */
+#menu_school{
+    background-color: #FFFFFF;
+    position: inherit;
+    display: inline-block;
+    float: left;
+    text-align: center; /* 가운데 정렬 */
+    line-height: 80px; /* 수직 정렬 */
+    width: 50%;
+    height: 100%;
+}
+
+#menu_school input{
+    vertical-align: middle;
+}
+
+#menu_club{
+    background-color: #FFFFFF;
+    position: inherit;
+    display: inline-block;
+    float: right;
+    text-align: center; /* 가운데 정렬 */
+    line-height: 80px; /* 수직 정렬 */
+    width: 50%;
+    height: 100%;
+}
+
+#menu_club input{
+    vertical-align: middle;
+}
+
+.filter_dropbox_container{
+    position: relative;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+    text-align: center;
+    
+    
+}
+
+#content_area{
+    width: 100%;
+    height: 57%;
+    text-align: center;
+    overflow: scroll;
+    
+}
+
+.filter_dropbox{
+    /* todo: 나중에 커스텀 css 넣을것 */
+
+    /* todo: 위아래 마진 넣을것 */
+    position: relative;
+    margin: auto;
+
+}
+
+.news_card_container{
+    background-color: #F0F1F2;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.news_card{
+    background-color: #FFFFFF;
+    position: inherit;
+    border: 1px solid #CECFD0;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.news_card_img{
+    position: inherit;
+    display: inline-block;
+    width: 19%;
+    height: 100%;
+    text-align: center
+}
+
+.news_card_content{
+    position: inherit;
+    display: inline-block;
+    border-left: 1px solid #CECFD0;
+    border-right: 1px solid #CECFD0;
+    width: 59%;
+    height: 100%
+}
+
+.news_card_like{
+    position: inherit;
+    display: inline-block;
+    float: right;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+.news_card_like_btn_container{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+}

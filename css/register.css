@@ -1,0 +1,202 @@
+/* todo: 백그라운드 이미지 최적화, */
+
+body {
+     background-image: url('../img/main/background_sample.png');
+     background-repeat: no-repeat;
+}
+
+
+/* 회원선택 css 시작 */
+
+#logo_container {
+     position: relative;
+     /* border: 1px solid black; */
+     margin: auto;
+     margin-top: 100px;
+     width: 50%;
+     height: auto;
+     text-align: center;
+}
+
+#logo_container img {
+     max-width: 400px
+}
+
+#card_container {
+     position: relative;
+     /* border: 1px solid black; */
+     width: 70%;
+     height: auto;
+     margin: auto;
+     margin-top: 200px;
+     text-align: center;
+}
+
+#student_container {
+     position: relative;
+     display: inline-block;
+     /* border: 1px solid black; */
+     margin: 10px;
+}
+
+#club_container {
+     position: relative;
+     display: inline-block;
+     /* border: 1px solid black; */
+     margin: 10px;
+}
+
+#school_container {
+     position: relative;
+     display: inline-block;
+     /* border: 1px solid black; */
+     margin: 10px;
+}
+
+#card_container img {
+     max-width: 200px;
+}
+
+
+/* 프로필 회원가입 css 시작 */
+
+#profile_container {
+     width: 650px;
+     height: 500px;
+     background-color: #E4E4E4;
+     margin: auto;
+     margin-top: 50px;
+}
+
+#profile_title {
+     width: 650px;
+     height: 100px;
+     background-color: #D7D8D8;
+}
+
+#title_container {
+     position: relative;
+     display: inline-block;
+     float: left;
+     /* border: 1px solid black; */
+     margin-left: 50px;
+     margin-top: 25px;
+}
+
+#font_register {
+     font-size: 50px;
+     color: #606060;
+}
+
+#step_container {
+     position: relative;
+     display: inline-block;
+     float: right;
+     /* border: 1px solid black; */
+     margin-top: calc((100px - 45px)/2)
+}
+
+.step_input_information {
+     position: relative;
+     display: inline-block;
+     /* border: 1px solid black; */
+}
+
+.step {
+     position: relative;
+     display: inline-block;
+     /* border: 1px solid black; */
+     margin-right: 50px;
+}
+
+.step_number {
+     font-size: 15px;
+     color: #606060;
+}
+
+#step_text_information {
+     font-size: 20px;
+     color: #606060;
+}
+
+#step_text_profile {
+     font-size: 20px;
+     color: #F10800;
+}
+
+#profile_img_container {
+     position: relative;
+     width: 50%;
+     margin: auto;
+     margin-top: 50px;
+     text-align: center;
+}
+
+
+/* todo: 동아리 선택 드롭다운박스 커스터마이즈 */
+
+
+/* todo: 동아리 선택 드롭다운박스 커스터마이즈 후 css 재설정 */
+
+#select_club_container {
+     position: relative;
+     display: inline-block;
+     float: left;
+}
+
+#register_finish_btn {
+     float: right;
+     margin-right: 80px;
+     margin-top: 50px;
+}
+
+
+/* 회원가입 정보입력 부분 시작 */
+
+#profile_content {
+     /* border: 1px solid black; */
+     width: 80%;
+     margin: auto;
+     margin-top: 50px;
+     text-align: left;
+}
+
+#input_email {
+     background-color: #E4E4E4;
+     border: 0px;
+     border-bottom: 1px solid #7D7D7D;
+     width: 50%;
+     height: 30px;
+}
+
+#input_pw {
+     background-color: #E4E4E4;
+     border: 0px;
+     border-bottom: 1px solid #7D7D7D;
+     width: 50%;
+     height: 30px;
+}
+
+#input_year {
+     background-color: #E4E4E4;
+     border: 0px;
+     border-bottom: 1px solid #7D7D7D;
+     width: 100px;
+     height: 30px;
+}
+
+#input_month {
+     background-color: #E4E4E4;
+     border: 0px;
+     border-bottom: 1px solid #7D7D7D;
+     width: 100px;
+     height: 30px;
+}
+
+#input_day {
+     background-color: #E4E4E4;
+     border: 0px;
+     border-bottom: 1px solid #7D7D7D;
+     width: 100px;
+     height: 30px;
+}
