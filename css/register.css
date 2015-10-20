@@ -219,3 +219,9 @@ body {
      width: 100px;
      height: 30px;
 }
+
+#fb_register_btn {
+     width: 300px;
+     background-color: #385597;
+     border: none;
+}

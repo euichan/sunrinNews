@@ -1,0 +1,953 @@
+#topbar{
+     width: 100%;
+     height: 70px;
+     line-height: 70px;
+     background-color: blue;
+}
+
+#logo_container{
+     position: relative;
+     display: inline-block;
+     width: 200px;
+     height: 40px;
+     margin: 10px;
+     margin-left: 40px;
+}
+
+
+
+
+
+/* 불꽃축제 css */
+/*@import url(//cdn.jsdelivr.net/font-nanum/1.0/nanumgothic/nanumgothic.css);*/
+.login-form #main .container,
+.joinstep1 #main .container,
+.joinstep5 #main .container,
+.finish-modi #main .container,
+.mypage1 #main .container,
+.find-form #main .container,
+.find-result-form #main .container,
+.find-pw-result #main .container,
+.customer-qna #main .container{min-height: inherit !important;}
+
+.login-form #footer .container,
+.joinstep1 #footer .container,
+.joinstep5 #footer .container,
+.finish-modi #footer .container,
+.mypage1 #footer .container,
+.find-form #footer .container,
+.find-result-form #footer .container,
+.find-pw-result #footer .container,
+.customer-qna #footer .container{
+     border-left: none !important;
+     border-right: none !important;
+}
+#main.login{
+
+}
+#main.login .page-title{
+     margin-top: 0;
+     /*color:#fff;*/
+}
+#main.login .breadcrumb{
+     margin-bottom: 10px;
+}
+#main.login .login-box #loginForm button[type="submit"]{
+     background-color: transparent;
+}
+#main.login .login-box #loginForm button[type="submit"]:hover{
+     background-color: #f37321;
+}
+#main.login {
+     background :#f2f2f2;
+}
+#main.login .container{
+     min-height:inherit !important;
+     /* background: url('/event/img/member/login_bg.jpg') no-repeat center top;
+     background-size: cover;*/
+}
+#main.login .login-box #btnLoginWithFacebook{
+     background-color: transparent;
+}#main.login .login-box #btnLoginWithFacebook:hover {
+     background-color: #404db0;
+}
+#main.login .login-box .box-inner{
+     padding: 0px 0 40px;
+     overflow: hidden;
+     width: 100%;
+}
+#main.login .inner .hr_line {
+     width: 30px;
+     height: 1px;
+     margin: 18px auto 0;
+     background-color:#898989;
+}
+#main.login .welcome-box{
+     border-bottom:none;
+     padding: 30px 0;
+     border-top: 1px solid #b2b2b2;
+     max-width: 850px;
+}
+#main.login .welcome-box .btn{
+     width: 150px;
+     height: 45px;
+     line-height: 42px;
+     border-width: 2px;
+     border-radius: 45px;
+     color:#fff;
+     border-color: #6356c2;
+     background: #6356c2 url('/event/img/event/icon-fire.png') no-repeat 16% center;
+     font-size: 13px;
+     padding: 0px 10px 0 38px;
+}
+
+#main.login .welcome-box .btn:hover{
+     color:#6356c2;
+     background-color: #fff;
+     background-image: url('/event/img/event/icon-fire-p.png');
+}
+#main.login .welcome-box .desc{
+     clear: both;
+}
+#main.login .welcome-box .desc ul{
+     overflow: hidden;
+}
+#main.login .welcome-box .desc ul li:first-child{
+     margin-left: 10px;
+}
+#main.login .welcome-box .desc ul li{
+     float: left;
+     border-radius: 100px;
+     border:1px solid #aeaeae;
+     width: 110px;
+     height: 94px;
+     padding: 18px 10px;
+     color: #333333;
+     line-height: 1.5em;
+     margin: 0 5px;
+     letter-spacing: -0.3px;
+     font-size: 11px;
+}
+#main.login .welcome-box .desc ul li .icon{
+     margin-bottom: 10px;
+}
+#main.login .welcome-box .welcome-title{
+     color: #333;
+     font-weight: 500;
+}
+#main.login .welcome-box .welcome-title span {
+
+     display: inline-block;
+     vertical-align: top;
+     margin: -3px 5px 0;
+}
+#main.login .welcome-box .welcome-title span.orange {
+     color: #f37321 !important;
+     display: inline-block;
+     vertical-align: middle;
+     margin-top: 0;
+}
+
+#main.login .welcome-box .desc em{
+     font-weight: 500;
+     margin-bottom: 21px;
+
+}
+#main.login .welcome-box p {
+     margin-bottom: 20px;
+     text-align: center;
+     white-space: nowrap;
+     /*color:#fff;*/
+}
+#main.login .welcome-box .btns {
+     padding-top: 28px;
+}
+#main.login .welcome-box .btns .btn {
+     line-height: 40px;
+     height: 40px;
+     font-weight: 500;
+     width: 208px;
+     font-family: "Myriad Pro","Yoon Gothic";
+     font-weight: bold;
+}
+#main.login .welcome-box .btns .btn.btn-facebook-join{
+     border-color: #404db0;
+     color: #404db0;
+}
+#main.login .welcome-box .btns .btn.btn-facebook-join:hover{
+     background-color: #404db0;
+     color: #fff;
+}
+#main.login .login-box .login-util{
+     width: 250px;
+}
+#main.login .login-box .login-util label{
+     letter-spacing: 0;
+     white-space: nowrap;
+     color: #929292;
+}
+#main.login .login-box .login-util .btn-find-account{
+     font-weight: 500;
+     background: url(/img/member/right-arrow-full.png) 100% 2px no-repeat;
+     min-width: 75px !important;
+     border-bottom: none;
+     padding-right: 10px;
+     padding-left: 9px;
+     border-left: 1px solid #bcbcbc;
+     line-height: 1;
+     white-space: nowrap;
+     color: #929292;
+}
+#main.login .login-box .login-util .save-usermail:after {
+     display: none;
+     content:'';
+}
+#main.login .login-box .login-util .save-usermail{
+     font-weight: 500;
+}
+.member-form .input-block .input-control .form-input {
+     font-size: 14px;
+     width: 330px;
+}
+.member-form .input-block .input-control .form-input[type="radio"]{
+     width: 15px;
+}
+.member-form .input-block .input-control .form-input.alert {
+     border-color: #f37321 !important;
+}
+#email2{
+     width: 90px;
+     right: 136px;
+}
+
+#main.join .boxed{
+     background: #f3f3f3;
+}
+#main.join-welcome .welcome-header .page-title,#main.join .page-title{
+     font-size: 30px;
+     line-height: 1.2;
+     margin-top: 0;
+}
+
+#main.join-welcome .welcome-header .page-title > .cyl-logo-b{  margin-right: 5px;display: inline-block;  vertical-align: middle;}
+#main.join-welcome .welcome-box .welcome-title{
+     font-weight: 500;
+}
+#main.join-welcome .welcome-box .welcome-title > span{
+     vertical-align: middle;
+     display: inline-block;
+     color: #333;
+
+}
+#main.join-welcome .welcome-box .welcome-title > span.orange{
+     margin-bottom: -9px;
+}
+#main.join-welcome .welcome-box .btns .btn{
+     /*font-weight: 500;*/
+     line-height: 3.6em;
+     padding: 0 20px;
+     background-color: transparent;
+     width: 250px;
+     height: 50px;
+     font-size: 15px;
+     font-family: "Myriad Pro","Yoon Gothic";
+}
+#main.join-welcome .welcome-box .btns .btn.btn-join-email{
+     color: #fd7222;
+     border-color: #fd7222;
+     background-color: transparent;
+     border-radius: 50px;
+}
+#main.join-welcome .welcome-box .btns .btn.btn-join-email:hover{
+     color: #fff;
+     background-color: #fd7222;
+}
+#main.join-welcome .welcome-box .btns .btn.btn-join-facebook{
+     background-color: transparent;
+     font-family: "Myriad Pro","Yoon Gothic";
+     text-align: center;
+     padding: 0 20px;
+     border-color: #4e6fff;
+     color: #4e6fff;
+     border-radius: 50px;
+
+}
+#main.join-welcome .welcome-box .btns .btn.btn-join-facebook:hover{
+     background-color: #4e6fff;
+     color: #fff;
+}
+
+#main.join-welcome .welcome-box .btns .col{
+     width: 50%;
+     display: block;
+     float: left;
+     padding: 20px 0;
+}
+#main.join-welcome .welcome-box .btns .col:first-child{
+     border-right: 1px solid #b3b3b3;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -o-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+}
+#main.join-welcome .welcome-box > a,#main .boxed .box-footer{
+     /*padding-top: 10px;*/
+}
+#main.join-welcome .welcome-box > a,#main .boxed .box-footer .btn{
+     border-color: #666;
+     width: 100px;
+     margin: 0 2px;
+     height: 40px;
+     line-height: 39px;
+     background-color: transparent;
+     border-width: 1px;
+}
+#main.join-welcome .welcome-box > a:hover,#main .boxed .box-footer .btn:hover{
+
+     background-color: #333;
+}
+#main.join-welcome .welcome-header .desc,#main.join-welcome .welcome-box p {
+     font-size: 12px;
+}
+#main.join-welcome .welcome-box {
+
+     max-width: 850px;
+     padding: 0px 0 29px;
+}
+#main.join-welcome .breadcrumb{
+     margin-bottom: 10px;
+}
+#main.join-welcome .welcome-box em{
+     margin-right: 20px;
+}
+#main.join-welcome .welcome-box .btns{
+     overflow: hidden;
+}
+#main.join-welcome  {
+     background: #f2f2f2;
+}
+#main.join-welcome .container {
+     /* background: url(/img/member/join-bg.jpg) no-repeat center top;*/
+
+     background-size: cover;
+     min-height: inherit !important;
+}
+
+#main.join-welcome .welcome-header{
+}
+#main.join-welcome .welcome-footer{
+     border-top: 1px solid #b3b3b3;
+     max-width: 580px;
+     margin: 0 auto;
+}
+#main.join-welcome .welcome-footer p{
+     padding: 40px 0;
+     color: #333;
+}
+#main.join-welcome .welcome-box .btns em{
+     margin: 0;
+}
+
+#main.join-welcome .welcome-footer .desc{
+     clear: both;
+     padding-bottom: 100px;
+}
+#main.join-welcome .welcome-footer .desc ul{
+     overflow: hidden;
+}
+#main.join-welcome .welcome-footer .desc ul li:first-child{
+     margin-left: 10px;
+}
+#main.join-welcome .welcome-footer .desc ul li{
+     float: left;
+     border-radius: 100px;
+     border:1px solid #aeaeae;
+     width: 116px;
+     height: 94px;
+     padding: 18px 7px;
+     color: #333333;
+     line-height: 1.5em;
+     margin: 0 5px;
+     letter-spacing: -0.3px;
+     font-size: 11px;
+}
+#main.join-welcome .welcome-footer .desc ul li .icon{
+     margin-bottom: 10px;
+}
+#main.join{
+     background: #f3f3f3;
+}
+#main.join .input-alert,#main.mypage-check .input-alert {
+     color:#f37321;
+     font-size: 12px;
+     margin-bottom: 10px;
+     line-height: 1.3em;
+}
+#main.mypage-check .container {
+     background: #f3f3f3;
+}
+#main.mypage-check .boxed {
+     background: #f3f3f3;
+}
+#main.join .cyl-benefit > p{
+     padding: 0 0 40px;
+     color: #333;
+}
+#main.join .cyl-benefit .desc{
+     clear: both;
+     width: 580px;
+     margin: 0 auto;
+     overflow: hidden;
+}
+#main.join .cyl-benefit .desc ul{
+     overflow: hidden;
+}
+#main.join .cyl-benefit .desc ul li:first-child{
+     margin-left: 10px;
+}
+#main.join .cyl-benefit .desc ul li{
+     float: left;
+     border-radius: 100px;
+     border:1px solid #aeaeae;
+     width: 116px;
+     height: 94px;
+     padding: 18px 7px;
+     color: #333333;
+     line-height: 1.5em;
+     margin: 0 5px;
+     letter-spacing: -0.3px;
+     font-size: 11px;
+}
+#main.join .welcome-footer .desc ul li .icon{
+     margin-bottom: 10px;
+}
+
+#main.join .cyl-benefit p strong{
+     font-weight: 500;
+}
+/*
+#main.login .login-box #loginForm button[type="submit"] {
+font-weight: 500;
+}
+#main.login .login-box #btnLoginWithFacebook{
+font-weight: 500;
+}
+*/
+
+#main.join .cyl-benefit p strong {
+     font-size: 15px;
+     letter-spacing:0;
+}
+#main.join .cyl-benefit p{
+     font-size: 13px;
+     color: #666;
+}
+#main.join .cyl-benefit p:last-child{
+     font-size: 12px;
+}
+.member-form .docs .doc-block{
+     padding: 0;
+     width: 49.5%;
+}
+.member-form .docs .doc-block:first-child{
+     margin-right: 1%
+}
+.member-form .docs .doc-block .doc-inner .doc-content h3{
+     padding: 6px 0 6px;
+}
+.member-form .docs .doc-block .doc-inner .doc-content .term_desc_top{
+     padding: 6px 0 6px;
+}
+.member-form .docs .doc-block .doc-inner .doc-content .term_desc_sub {
+     padding: 3px 0 3px 9px;
+}
+#address_detail{
+     float: left;
+}
+#address{
+     margin-right: 1%;
+     float: left;
+}
+.member-form .input-block.addr{
+     width: 100%;
+     clear: both;
+}
+/*.join-additional-info #address,.join-additional-info #address_detail{*/
+/*width: 100%;*/
+/*}*/
+.btn.btn-link {
+     background: url(/img/member/right-arrow-full.png) 100% 4px no-repeat;
+     min-width: 75px !important;
+     border-bottom: none;
+     padding-right: 0;
+}
+#main.login .login-box .box-inner .col{
+     float: left;
+     width: 50%;
+     padding: 0 48px 35px;
+     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     -o-box-sizing: border-box;
+
+}
+#main.login .login-box .box-inner .col > h3{
+     color: #4e6fff;
+     padding-bottom: 40px;
+     font-size: 17px;
+}
+#main.login .login-box .box-inner .col:first-child > h3{
+     color:#f37321;
+}
+#main.login .login-box .box-inner .col:first-child{
+     border-right:1px solid #b2b2b2;
+}
+#main.login .login-box #loginForm .login-form{
+     width: 100%;
+}
+#main.login .login-box #loginForm .login-form input{
+     background: transparent;
+     padding-left: 0;
+     /* color: #fff;*/
+     border: none;border-bottom: 1px solid #b2b2b2;
+}
+/*
+#main.login .login-box #loginForm .login-form ::-webkit-input-placeholder {
+color: #fff;
+}
+#main.login .login-box #loginForm .login-form :-moz-placeholder {
+color: #fff;
+}
+#main.login .login-box #loginForm .login-form ::-moz-placeholder {
+color: #fff;
+}
+#main.login .login-box #loginForm .login-form :-ms-input-placeholder {
+color: #fff;
+}
+#main.login .login-box #loginForm .login-form input[placeholder]{
+color: #fff;
+}
+*/
+#main.login .login-box #loginForm button[type="submit"]{
+     position: static;
+     clear: both;
+     width: 180px;
+     height: 55px;
+     border-radius: 27px;
+     border-width: 2px;
+     margin: 26px auto 0;
+     display: block;
+}
+#main.login .login-box{
+     max-width: 850px;
+     padding-top: 40px;
+     padding-bottom: 70px;
+     margin:0 auto;
+     border-top:1px solid #b2b2b2;
+
+}
+#main .boxed .complete-msg hr{
+     margin: 0 0 10px;
+}
+#main .boxed .complete-msg{
+     background: none;
+}
+#main .boxed .complete-msg p.msg-large{
+     margin-bottom: 0;
+     color: #f37321;
+}
+#main .boxed .recent-post article.post .post-excerpt{
+     font-size: 12px;
+}
+.input-control.auth .btn {
+     width: 100px;
+     padding: 0;
+     float: right;
+}
+.input-control.auth .btn:first-child {
+     float: left;
+     margin-right: 9px;
+     width: 103px;
+}
+.input-control.birth #birthday1{
+     float: left;
+     margin-right: 9px;
+}
+.privacy-company-notice{
+     overflow: hidden;
+     clear: both;
+     border-bottom: 1px solid #ccc;
+     margin-bottom: 15px;
+     padding-top: 15px;
+}
+.privacy-company-notice .yak-title{
+     font-size: 15px;
+     font-weight: 500;
+     line-height: 30px;
+     margin-bottom: 10px;
+}
+.privacy-company-notice dl{  overflow: hidden;
+     padding-bottom: 30px;}
+.privacy-company-notice dl dt {
+     clear: both;
+     float: left;
+     display: block;
+     width: 22.5%;
+     padding-left: 3.5%;font-size: 12px;
+     padding-top: 18px;
+
+}
+.privacy-company-notice dl dd {
+     float: left;
+     display: block;
+     width: 74%;
+     font-size: 12px;
+     padding-top: 20px;
+
+}
+.privacy-company-notice dl .head{
+     background-color: #e5e5e5;
+     height: 40px;font-size: 13px;
+     line-height: 3em;
+     width: 74%;
+     padding: 0;
+}
+.privacy-company-notice dl .head:first-child{
+
+     width: 22.5%;
+     padding: 0 0 0 3.5%;
+}
+
+#main .boxed .result-email{
+     font-size: 15px;
+}
+
+#main.find-account .container{
+     background: #f2f2f2;
+}
+#main.find-account .boxed .box-footer{
+     padding-top: 10px;
+     padding-bottom: 90px;
+}
+#main.find-account .boxed .result-msg{
+     font-size: 14px;
+}
+#main.find-account .boxed .msg{
+     padding: 40px 20px 10px;
+}
+#main.find-account .boxed .msg.half{
+     padding: 15px 0px 15px;
+     width: 50%;
+     float: left;
+     margin: 35px 0;
+     border-left: 1px solid #e1e1e1;
+     box-sizing: border-box;
+}
+#main.find-account .boxed .msg.half:first-child{
+     border-left: none;
+}
+#main.find-account .boxed .msg p{
+     margin-bottom: 0;
+}
+
+
+#main.find-account .boxed .msg .btn-confirm{
+     margin-top: 15px;
+}
+#main.find-account .boxed h1.page-title{
+     text-align: center;
+}
+
+#main.find-account ul.list li .btn{
+     margin-top: -10px;
+}
+#main.find-account .boxed #email2{
+     right: 30px;
+     width: 100px;
+}
+#noFind .modal-box {
+     height: 286px;
+     max-height: 286px;
+     width: 520px;
+     background-color: #fff;
+}
+
+#noFind .modal-box .btn-hide-modal {
+     right: 20px;
+     top: 20px;
+     background: url('/event/img/modal/btn-hide-modal.png') 50% 50% no-repeat;
+     z-index: 1;
+}
+#noFind .modal-box .modal-box-body {
+     text-align: center;
+     padding: 0;
+}
+#noFind .modal-box .modal-box-body .boxed-content {
+     overflow: hidden;
+}
+#noFind .modal-box .modal-box-body .boxed-content .boxed-inner-content {
+     overflow: hidden;
+     padding: 50px 33px;
+}
+
+#noFind .modal-box .modal-box-body .boxed-content .boxed-inner-content .clear_line{
+     margin: 38px 0;
+     width: 100%;
+     height: 1px;
+     display: block;
+     background-color: #ddd;
+}
+
+#noFind .modal-box .modal-box-body .boxed-content .boxed-inner-content h1 {
+     font-size: 16px;
+     line-height: 1.5em;
+     color: #333333;
+     padding-top: 15px;
+}
+#noFind .modal-box .modal-box-body .boxed-content .boxed-inner-content hr{
+     margin: 38px 0;
+}
+
+#noFind .modal-box .modal-box-body .boxed-content .boxed-inner-content .btn{
+     border-color: #343434;
+     color: #343434;
+     height: 40px;
+     line-height: 39px;
+}
+#noFind .modal-box .modal-box-body .boxed-content .boxed-inner-content .btn:hover{
+     background-color: #343434;
+     color: #fff;
+}
+#main.login .login-box .notice{
+     /*color:#fff;*/
+     text-align: left;
+     font-size: 12px;
+     display: block;
+     line-height: 1.9em;
+     letter-spacing: 0;
+}
+#main.login .login-box #btnLoginWithFacebook{
+     width: 180px;
+     height: 55px;
+     border-radius: 27px;
+     margin: 122px auto 0;
+     line-height: 3.7em;
+     text-align: center;
+     border-color: #4e6fff;
+     border-width: 2px;
+     color: #4e6fff;
+}
+
+#main.login .login-box #btnLoginWithFacebook:hover{
+     color: #fff;
+     background-color: #4e6fff;
+}
+#main .boxed .well.remain-time p{
+     margin-bottom: 0;
+}
+#main .boxed .well.remain-time em{
+     padding-top: 10px;
+     display: block;
+}
+#main .boxed .well.remain-time .limit{
+     padding-top: 13px;
+     display: block;
+}
+.find-pw-result #main.find-account ul.list li .btn{
+     font-size: 12px;
+}
+.find-pw-result #main.find-account .boxed .msg{
+     padding: 40px 20px 2px;
+}
+.find-pw-result #main .boxed hr{
+     margin: 0px auto 32px;
+}
+
+#main .boxed .change-pwd .container{
+     background-color: #f3f3f3;
+}
+#main .boxed .change-pwd .notice{
+     line-height: 1.8em;
+}
+#main .boxed .change-pwd ul.list li h4 {
+     font-size: 14px;
+}
+#main .boxed .change-pwd ul.list li p {
+     font-size: 12px;
+     line-height: 1.8em;
+}
+#main .boxed .change-pwd .well hr {
+     margin: 30px auto;
+}
+#main .boxed .change-pwd .well ul li {
+     font-size: 12px;
+}
+
+
+#main.change-pwd-campaign .boxed .campaign-desc:first-child{
+     padding-top: 0;
+}
+#main.change-pwd-campaign .boxed .campaign-desc{
+     line-height: 1.8em;
+     border-bottom: 1px solid #ededed;
+     padding: 28px 0;
+}
+#main.change-pwd-campaign .boxed .campaign-title{
+     padding: 50px 0 20px;
+     text-align: center;
+     color:#333;
+     font-size: 14px;
+     position: relative;
+}
+#main.change-pwd-campaign .boxed .campaign-title:before {
+     content: '*';
+     position: relative;
+     color: #f37321;
+     top: 6px;
+     left: -10px;
+     font-size: 17px;
+}
+#main.change-pwd-campaign .boxed .campaign-title:after {
+     content: '*';
+     position: relative;
+     color: #f37321;
+     top: 6px;
+     right: -8px;
+     font-size: 17px;
+}
+#main.change-pwd-campaign .boxed hr.small{
+     width: 40px;
+     border-color: #939393;
+     margin: 15px auto 0px auto;
+}
+#main.change-pwd-campaign .boxed ul.list li:before {
+     border: 0;
+     background: url(/event/img/common/icon-orange-checkmark.png) 50% 50%;
+     width: 13px;
+     height: 10px;
+     top: 0;
+     left: -20px;
+}
+#main.change-pwd-campaign .boxed ul.list li h4 {
+     font-size: 14px;
+     padding-bottom: 10px;
+}
+#main.change-pwd-campaign .boxed ul.list li p {
+     font-size: 12px;
+     line-height: 1.8em;
+     padding-top: 3px;
+     position: relative;
+     padding-left: 11px;
+}
+#main.change-pwd-campaign .boxed .list.clearfix{
+     margin-top: 40px;
+}
+
+#main.change-pwd-campaign .boxed .list.clearfix p:before {
+     content: '*';
+     position: absolute;
+     color: #666;
+     top: 5px;
+     left: -2px;
+     font-size: 14px;
+}
+#main.change-pwd-campaign .boxed .well hr {
+     margin: 30px auto;  width: 440px;
+}
+#main.change-pwd-campaign .boxed .well ul li {
+     font-size: 12px;
+}
+#main.change-pwd-campaign .boxed .well .btn{
+     margin-top: 0;
+}
+#main.change-pwd-campaign .boxed .well .btn.btn-orange{
+     margin-right: 5px;
+}
+#main.change-pwd-campaign .boxed .well .btn.btn-later{
+     border-color: #666666;
+}
+#main.change-pwd-campaign .boxed .well .input-block{
+     margin: 0 auto 10px auto;
+     width: 420px;
+}
+#main.change-pwd-campaign .boxed .well .input-block .input-control {
+     margin-left: 120px;
+}
+
+#mypageCheckForm .btn-confirm{
+     margin: 0 auto;
+     width: 120px;
+     display: block;
+}
+#secedeForm ul.list li p{
+     padding-top: 5px;
+     line-height: 1.8em;
+}
+#secedeForm ul.list li .btn{
+     font-size: 12px;
+}
+#main .boxed #secedeForm .msg{
+     padding-bottom: 0;
+}
+
+.member-form .input-block .input-block-right p.dotted:before{
+     top:0;
+}
+.member-form .join-additional-info h2 i {
+     position: relative;
+     top: 2px;
+}
+
+.member-form .docs .doc-block .doc-inner:focus{
+     outline:none;
+     box-shadow : 0 0 5px rgba(51,102,248,0.9);
+
+}
+
+.lt-ie9 .member-form .docs .doc-block .doc-inner:focus{
+     outline:thin dotted;
+
+}
+
+
+.member-form .docs .doc-block .custom-checkbox{
+     width: 100%;
+     box-sizing: border-box;
+     font-size: 15px;
+     font-weight: 500;
+     line-height: 30px;
+     margin-bottom: 16px;
+     padding-left: 5px;
+     clear: both;
+     position: relative;
+}
+.member-form .docs .doc-block .custom-checkbox.rounded-large input[type="checkbox"]{
+     left: inherit;
+     right: 10px;
+}
+.member-form .docs .doc-block .custom-checkbox.rounded-large i{
+     left: inherit;
+     right: 0;
+}
+
+.member-form .facebook-info{
+     width: 395px;
+     display: inline-block;
+     margin-right: 30px;
+}
+.member-form .facebook-info p{
+     font-size: 12px;
+}
+.btn-joinform-facebook{
+     display: inline-block;
+     vertical-align: bottom;
+     border: 1px solid #404db0;
+}
+.btn.btn-large{
+     border-radius: 50px;
+     border-width: 2px;
+}
+
+#main .boxed .well.remain-time{
+     background-color: #fff;
+}
