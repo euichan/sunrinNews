@@ -1,35 +1,37 @@
 <!doctype html>
 <html>
-     <head>
-          <meta charset = "UTF-8">
-          <link rel = stylesheet href = "../css/main.css">
-          <link rel  = stylesheet href = "../css/calendar.css">
-          <script src="../js/jquery.js"></script>
-          <script src="../js/InfiniteScroll.js"></script>
-          <title>SunrinNews</title>
-     </head>
-     <body>
-          <div id = "topbar">
-               <div id = "logo_container">
-                    <img src = "../img/logo/main_logo_black.png">
-               </div>
-               
-               <div id = "search_box_container">
-                    <input type="text" id = "search_box">
-               </div>
-               
-          </div>
-          
-          <div id = "cal_container">
-               <div id ="cal">
-                   
-                   <div id = "cal_sidebar">
-                        
-                   </div>
-                    <div id = "cal_topbar">
-                         
-                    </div>
-               </div>
-          </div>
-     </body>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = stylesheet href = "../css/main.css">
+        <link rel  = stylesheet href = "../css/calendar.css">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/InfiniteScroll.js"></script>
+        <title>SunrinNews</title>
+    </head>
+    <body>
+        <div id = "topbar">
+            <!-- 검색창 시작 -->
+            <div id = "search_sidebar">
+                <input id = "textfield" placeholder="검색" type="search"></input>
+            <label id = search_img for = "search_submit"></label>
+            <input id = "search_submit" type="submit"></input>
+        </div>
+    <!-- 검색창 끝 -->
+
+    <div id = "logo_container">
+        <img src = "../img/logo/main_logo_black.png">
+    </div>
+
+    <div id = "cal_container">
+        <div id ="cal">
+
+            <div id = "cal_sidebar">
+
+            </div>
+            <div id = "cal_topbar">
+
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
