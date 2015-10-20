@@ -13,3 +13,25 @@
      margin: 10px;
      margin-left: 40px;
 }
+#container {
+    width: 70%;
+    height: 550px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#h1_register {
+    margin: auto;
+    width: auto;
+}
+
+#register_select_container {
+    position: inherit;
+    height: 200px;
+    width: 100%;
+    margin: 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
