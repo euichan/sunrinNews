@@ -17,10 +17,48 @@
                 <img src = "../img/logo/main_logo_black.png">
             </div>
         </div>
-        
+
         <div id = "posthtml_title_box"> 글쓰기</div>
-        
-        <input type="text" class="input" value="제목을 입력하시오">
-        
+        <div id = post_left_container>
+            <div id = post_type_btn_container>
+                    <input type="button" class = "type_btn" value="공지">
+                    <input type="button" class = "type_btn" value="홍보">
+                    <input type="button" class = "type_btn" value="행사">
+            </div>
+        </div>
+        <div id = "contents_container">
+            <div id = "input_container">
+                <input type="text" class="input" value="제목을 입력하시오">
+                <input type="text" class="input" value="태그를 입력하시오">
+            </div>
+
+            <div id = "post_contents_box">
+                <!--이미지 첨부 박스-->
+                <div class = "spacer"></div>
+                <div class = "post_box">
+                    <div class = "img_post_box">
+                        <div class = "post_num">1</div>
+                    </div>
+                </div>
+                <div class = "post_box">
+                    <div class = "img_post_box">
+                        <div class = "post_num">2</div>
+                    </div>
+                </div>
+                <div class = "post_box">
+                    <div class = "img_post_box">
+                        <div class = "post_num">3</div>
+                    </div>
+                </div>
+                <div id = "add_post_box" class = "post_box">
+                    <div class = "add_post">+</div>
+                </div>
+                <div class = "spacer"></div>
+            </div>
+            <div id = "submit_btn_container">
+                <input type="button" id = "submit_btn" value="게시하기">
+            </div>
+        </div>
+        <div id = "post_right_container"></div>
     </body>
 </html>
