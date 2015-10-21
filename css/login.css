@@ -63,8 +63,7 @@ body{
      margin-bottom: 100px;
      width: 60%;
      text-align: center;
-     
-     
+     outline : none;
 }
 
 .login_input {

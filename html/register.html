@@ -1,247 +1,247 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>SunriNews Register</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage One single section." />
-    <meta name="keywords" content="fullpage,One, Single, Section" />
-    <meta name="Resource-type" content="Document" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SunriNews Register</title>
+        <meta name="author" content="Alvaro Trigo Lopez" />
+        <meta name="description" content="fullPage One single section." />
+        <meta name="keywords" content="fullpage,One, Single, Section" />
+        <meta name="Resource-type" content="Document" />
 
 
-    <!-- 기본 css 시작 -->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/register.css">
+        <!-- 기본 css 시작 -->
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/register.css">
 
-    <!-- 플페이지 css 시작 -->
-    <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="../css/examples.css" />
-    <style>
-        /* Style for our header texts
-	* --------------------------------------- */
-        
-        .view {
-            visibility: hidden;
-        }
-        
-        h1 {
-            font-size: 5em;
-            font-family: arial, helvetica;
-            color: #fff;
-            margin: 0;
-            padding: 40px 0 0 0;
-        }
-        
-        .intro p {
-            color: #fff;
-            padding: 40px 0 0 0;
-        }
-        
-        .wrap {
-            margin-left: auto;
-            margin-right: auto;
-            width: 980px;
-            position: relative;
-            padding: 20px 0 20px 0;
-        }
-        
-        .wrap h1 {
-            font-size: 2.3em;
-            color: #333;
-            padding: 30px 0 10px 0;
-        }
-        
-        .wrap p {
-            font-size: 16px;
-            padding: 0 0 10px 0;
-        }
-        
-        .box {
-            display: block;
-            background: #f2f2f2;
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        /* Centered texts in each section
-	* --------------------------------------- */
-        
-        .section {
-            text-align: center;
-        }
-        /* Bottom menu
-	* --------------------------------------- */
-        
-        #infoMenu li a {
-            color: #000;
-        }
-        
-        #fullpage {
-            top: -0.01%;
-            position: absolute;
-        }
-    </style>
+        <!-- 플페이지 css 시작 -->
+        <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="../css/examples.css" />
+        <style>
+            /* Style for our header texts
+            * --------------------------------------- */
 
-    <!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+            .view {
+                visibility: hidden;
+            }
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+            h1 {
+                font-size: 5em;
+                font-family: arial, helvetica;
+                color: #fff;
+                margin: 0;
+                padding: 40px 0 0 0;
+            }
 
-    <script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
-    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
-    <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="../js/examples.js"></script>
-    <script type="text/javascript" src="../js/register.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#4A6FB1'],
-                css3: true,
+            .intro p {
+                color: #fff;
+                padding: 40px 0 0 0;
+            }
+
+            .wrap {
+                margin-left: auto;
+                margin-right: auto;
+                width: 980px;
+                position: relative;
+                padding: 20px 0 20px 0;
+            }
+
+            .wrap h1 {
+                font-size: 2.3em;
+                color: #333;
+                padding: 30px 0 10px 0;
+            }
+
+            .wrap p {
+                font-size: 16px;
+                padding: 0 0 10px 0;
+            }
+
+            .box {
+                display: block;
+                background: #f2f2f2;
+                border: 1px solid #ccc;
+                padding: 20px;
+                margin: 20px 0;
+            }
+            /* Centered texts in each section
+            * --------------------------------------- */
+
+            .section {
+                text-align: center;
+            }
+            /* Bottom menu
+            * --------------------------------------- */
+
+            #infoMenu li a {
+                color: #000;
+            }
+
+            #fullpage {
+                top: -0.01%;
+                position: absolute;
+            }
+        </style>
+
+        <!--[if IE]>
+<script type="text/javascript">
+var console = { log: function() {} };
+</script>
+<![endif]-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+        <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+        <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="../js/examples.js"></script>
+        <script type="text/javascript" src="../js/register.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#fullpage').fullpage({
+                    sectionsColor: ['#4A6FB1'],
+                    css3: true,
+                });
             });
-        });
-    </script>
+        </script>
 
-</head>
+    </head>
 
-<body>
-    <div id="logo_container">
-        <img src="../img/logo/main_logo_white.png">
-    </div>
-    <div id="fullpage">
-        <div class="section " id="section0">
-
-            <!-- 학생 선택 div 시작 -->
-            <div class="slide active" data-anchor="firstPage">
-                <div id="card_container">
-                    <div id="student_container" onclick="seungie(this)">
-                        <img src="../img/register/student.png">
-                    </div>
-
-                    <div id="club_container" onclick="seungie(this)">
-                        <img src="../img/register/club.png">
-                    </div>
-
-                    <div id="school_container" onclick="seungie(this)">
-                        <img src="../img/register/school.png">
-                    </div>
-                </div>
-
-                <input type="button" value = "페이스북으로 로그인" id = "fb_register_btn">
-            </div>
-            <!-- 학생 선택 div 끝-->
-
-            <!-- 정보입력 div 시작 -->
-            <div class="slide" data-anchor="secondPage">
-                <div class="view">
-                    <img src="../img/logo/main_logo_white.png">
-                </div>
-                <div id="profile_container">
-                    <div id="profile_title">
-                        <div id="title_container">
-                            <font id="font_register">회원가입</font>
-                        </div>
-
-                        <div id="step_container">
-                            <div class="step">
-                                <font class="step_number">01.</font>
-                                <br>
-                                <font id="step_text_profile">정보입력</font>
-                            </div>
-
-                            <div class="step">
-                                <font class="step_number">02.</font>
-                                <br>
-                                <font id="step_text_information">프로필입력</font>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="profile_content">
-                        이메일
-                        <br>
-                        <input type="email" id="input_email">
-                        <input type="button" value="인증">
-                        <br> 비밀번호
-
-                        <br>
-                        <input type="password" id="input_pw">
-                        <br> 비밀번호 확인
-                        <br>
-                        <input type="password" id="input_pw_check">
-                        <br> 성별
-
-                        <br>
-                        <input type="radio" value="남자" name="sex">남자
-                        <input type="radio" value="여자" name="sex">여자
-                        <br> 생년월일
-
-                        <br>
-                        <input type="text" id="input_year">년
-                        <input type="text" id="input_month">월
-                        <input type="text" id="input_day">일
-                        <input type="button" id="next_btn" value="다음" onclick="seungie(this)">
-                        <input type="button" id="prev_btn" value="이전" onclick="seungie(this)">
-                    </div>
-
-
-                </div>
-            </div>
-            <!--정보입력 div 끝 -->
-
-
-
-            <!-- 프로필 입력 div 시작 -->
-            <div class="slide" data-anchor="3rdPage">
-                <div class="view">
-                    <img src="../img/logo/main_logo_white.png">
-                </div>
-                <div id="profile_container">
-                    <div id="profile_title">
-                        <div id="title_container">
-                            <font id="font_register">회원가입</font>
-                        </div>
-
-                        <div id="step_container">
-                            <div class="step">
-                                <font class="step_number">01.</font>
-                                <br>
-                                <font id="step_text_information">정보입력</font>
-                            </div>
-
-                            <div class="step">
-                                <font class="step_number">02.</font>
-                                <br>
-                                <font id="step_text_profile">프로필입력</font>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="profile_content_profile">
-                        <div id=p rofile_img_container>
-                            <img src="../img/register/profile_img_input.png">
-                        </div>
-                        <div id="select_club_container">
-                            <select class="select_club">
-                                <option value="Layer7">Layer7</option>
-                                <option value="ApplePi">ApplePi</option>
-                                <option value="Unifox">Unifox</option>
-                            </select>
-                        </div>
-                        <input type="button" id="prev_btn" value="이전" onclick="seungie(this)">
-                        <input id="register_finish_btn" type="image" src="../img/register/register_finish_btn.png" onclick="seungie(this)">
-                    </div>
-                </div>
-            </div>
-            <!-- 프로필 입력 div 끝 -->
-
+    <body>
+        <div id="logo_container">
+            <img src="../img/logo/main_logo_white.png">
         </div>
-    </div>
+        <div id="fullpage">
+            <div class="section " id="section0">
 
-</body>
+                <!-- 학생 선택 div 시작 -->
+                <div class="slide active" data-anchor="firstPage">
+                    <div id="card_container">
+                        <div id="student_container" onclick="seungie(this)">
+                            <img src="../img/register/student.png">
+                        </div>
+
+                        <div id="club_container" onclick="seungie(this)">
+                            <img src="../img/register/club.png">
+                        </div>
+
+                        <div id="school_container" onclick="seungie(this)">
+                            <img src="../img/register/school.png">
+                        </div>
+                    </div>
+
+                    <input type="button" value = "페이스북으로 로그인" id = "fb_register_btn">
+                </div>
+                <!-- 학생 선택 div 끝-->
+
+                <!-- 정보입력 div 시작 -->
+                <div class="slide" data-anchor="secondPage">
+                    <div class="view">
+                        <img src="../img/logo/main_logo_white.png">
+                    </div>
+                    <div id="profile_container">
+                        <div id="profile_title">
+                            <div id="title_container">
+                                <font id="font_register">회원가입</font>
+                            </div>
+
+                            <div id="step_container">
+                                <div class="step">
+                                    <font class="step_number">01.</font>
+                                    <br>
+                                    <font id="step_text_profile">정보입력</font>
+                                </div>
+
+                                <div class="step">
+                                    <font class="step_number">02.</font>
+                                    <br>
+                                    <font id="step_text_information">프로필입력</font>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="profile_content">
+                            이메일
+                            <br>
+                            <input type="email" id="input_email" class="register_input_field">
+                            <input type="button" id="email_id_btn" class= "reg_btn" value="인증">
+                            <br> 비밀번호
+
+                            <br>
+                            <input type="password" id="input_pw" class="register_input_field">
+                            <br> 비밀번호 확인
+                            <br>
+                            <input type="password" id="input_pw_check" class="register_input_field">
+                            <br> 성별
+
+                            <br>
+                            <input type="radio" value="남자" name="sex">남자
+                            <input type="radio" value="여자" name="sex">여자
+                            <br> 생년월일
+
+                            <br>
+                            <input type="text" id="input_year">년
+                            <input type="text" id="input_month">월
+                            <input type="text" id="input_day">일
+                            <input type="button" id="prev_btn" value="이전" class="reg_btn" onclick="seungie(this)">
+                                <input type="button" id="next_btn" value="다음" class="reg_btn" onclick="seungie(this)">
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--정보입력 div 끝 -->
+
+
+
+                <!-- 프로필 입력 div 시작 -->
+                <div class="slide" data-anchor="3rdPage">
+                    <div class="view">
+                        <img src="../img/logo/main_logo_white.png">
+                    </div>
+                    <div id="profile_container">
+                        <div id="profile_title">
+                            <div id="title_container">
+                                <font id="font_register">회원가입</font>
+                            </div>
+
+                            <div id="step_container">
+                                <div class="step">
+                                    <font class="step_number">01.</font>
+                                    <br>
+                                    <font id="step_text_information">정보입력</font>
+                                </div>
+
+                                <div class="step">
+                                    <font class="step_number">02.</font>
+                                    <br>
+                                    <font id="step_text_profile">프로필입력</font>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile_content_profile">
+                            <div id=p rofile_img_container>
+                                <img src="../img/register/profile_img_input.png">
+                            </div>
+                            <div id="select_club_container">
+                                <select class="select_club">
+                                    <option value="Layer7">Layer7</option>
+                                    <option value="ApplePi">ApplePi</option>
+                                    <option value="Unifox">Unifox</option>
+                                </select>
+                            </div>
+                            <input type="button" id="prev_btn" value="이전" onclick="seungie(this)">
+                            <input id="register_finish_btn" type="image" src="../img/register/register_finish_btn.png" onclick="seungie(this)">
+                        </div>
+                    </div>
+                </div>
+                <!-- 프로필 입력 div 끝 -->
+
+            </div>
+        </div>
+
+    </body>
 
 </html>
