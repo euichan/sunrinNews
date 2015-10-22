@@ -148,6 +148,7 @@ body {
     position: relative;
     margin: auto;
     text-align: center;
+    top : 50px;
 }
 
 
@@ -156,7 +157,7 @@ body {
 
 /* todo: 동아리 선택 드롭다운박스 커스터마이즈 후 css 재설정 */
 
-#select_club_container {
+#select_box {
     position: relative;
     display: inline-block;
     float: left;
@@ -310,4 +311,8 @@ body {
     margin-top: -20px;
     margin-left: 30px;
     margin-bottom: 20px;
+}
+
+.select_club {
+    
 }
