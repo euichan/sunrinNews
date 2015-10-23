@@ -5,14 +5,14 @@
         <link rel = stylesheet href = "../css/main.css">
         <link rel  = stylesheet href = "../css/calendar.css">
         <script src="../js/jquery.js"></script>
-        <script src="../js/InfiniteScroll.js"></script>
+        <script src="../js/calendar.js"></script>
         <title>SunrinNews</title>
     </head>
     <body>
         <div id = "topbar">
             <!-- 검색창 시작 -->
             <div id = "search_sidebar">
-                <input id = "textfield" placeholder="검색" type="search"></input>
+            <input id = "textfield" placeholder="검색" type="search"></input>
             <label id = search_img for = "search_submit"></label>
             <input id = "search_submit" type="submit"></input>
         </div>
@@ -47,23 +47,23 @@
         
         <div id ="cal_topbar">
             <div id = "month">
-               <input type="image" src="../img/calender/img_btn_left.png">
-                <font>OCTOBER, 2015</font>
-                <input type="image" src="../img/calender/cal_btn_right.png">
+               <input type="image" src="../img/calender/img_btn_left.png" onclick="seungie_prev(this)">
+                <font id="month_title"></font>
+                <input type="image" src="../img/calender/cal_btn_right.png" onclick="seungie_next(this)">
             </div>
         </div>
       <!-- 달력 테이블 시작 -->
            <div id = "cal_container">
-               <div id = "day_container">
-                   <div class = "day_monday">월</div>
-                   <div class = "day">화</div>
-                   <div class = "day">수</div>
-                   <div class = "day">목</div>
-                   <div class = "day">금</div>
-                   <div class = "day">토</div>
-                   <div class = "day">일</div>
-                </div>
-            <ol>
+               <ol id = "day_container">
+                   <li class = "day_monday">월</li>
+                   <li class = "day">화</li>
+                   <li class = "day">수</li>
+                   <li class = "day">목</li>
+                   <li class = "day">금</li>
+                   <li class = "day">토</li>
+                   <li class = "day">일</li>
+                </ol>
+            <ol class="calender">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -98,7 +98,14 @@
                 <li></li>
                 <li></li>
                 <li></li>
-
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ol>
             </div>
     <!-- 달력 테이블 끝 -->
