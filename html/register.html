@@ -184,7 +184,7 @@ var console = { log: function() {} };
                             <input type="text" id="input_month">월
                             <input type="text" id="input_day">일
                             <input type="button" id="prev_btn" value="이전" class="reg_btn" onclick="seungie(this)">
-                                <input type="button" id="next_btn" value="다음" class="reg_btn" onclick="seungie(this)">
+                            <input type="button" id="next_btn" value="다음" class="reg_btn" onclick="seungie(this)">
                         </div>
 
 
@@ -225,14 +225,15 @@ var console = { log: function() {} };
                                 <img src="../img/register/profile_img_input.png" width = "130px" >
                             </div>
                             <div id="select_box">
-                               <label for = "club">동아리</label>
-                                <select class="select_club">
+                                <label for = "club">동아리</label>
+                                <select id="club" title="select club">
+                                    <option selected="selected">club select..</option>
                                     <option value="Layer7">Layer7</option>
                                     <option value="ApplePi">ApplePi</option>
                                     <option value="Unifox">Unifox</option>
                                 </select>
                             </div>
-                            <input type="button" id="prev_btn" value="이전" onclick="seungie(this)">
+                            <input type="button" id="prev_btn" value="이전" class="reg_btn third_btn" onclick="seungie(this)">
                             <input id="register_finish_btn" type="image" src="../img/register/register_finish_btn.png" onclick="seungie(this)">
                         </div>
                     </div>

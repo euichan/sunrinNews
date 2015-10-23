@@ -1,16 +1,132 @@
 @charset "UTF-8";
 
+
+#topbar{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: white;
+
+}
+
+#logo_container{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    margin: 10px;
+    margin-left: 40px;
+}
+
+
+
+
+#search_sidebar {
+    position : fixed;
+    height: 25px;
+    width: 280px;
+    left : 270px;
+    top : 1px;
+    z-index: 5;
+    opacity: 1;
+    padding: 10px 0;
+    border-bottom: solid 2px #0e080d;
+}
+
+#textfield {
+    position: absolute;
+    top : 15px;
+    left : 25px;
+    outline: none;
+    height: 30px;
+    width: 200px;
+    background-color: transparent;
+    border: transparent;
+    font-size: 15px;
+    color: #fff;
+}
+
+#search_img {
+    margin-top: 13px;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/calender/magnifying-glass.png);
+    background-size: contain;
+    float: right;
+}
+
+#search_submit {
+    display: none;
+}
+
+/* 캘린더 관련 css 시작 */
+
+#container{
+    position: relative;
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #4D4D4D;
+}
+
+
+#cal_sidebar{
+    display: inline-block;
+    float: left;
+    width: 15%;
+    height: 100%;
+    background-color: #4D4D4D;
+    position: absolute;
+    text-align: center;
+}
+
+#sidebar_btn_container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+    text-align: center;
+}
+#cal_topbar{
+    display: inline-block;
+    float: right;
+    width: 85%;
+    height: 80px;
+    background-color: #4D4D4D;
+}
+
+#month{
+    width: 50%;;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#cal_container{
+    display: inline-block;
+    float: right;
+    width: 85%;
+    height: 620px;
+    background-color: white;
+}
+
+
 ol {
     overflow: hidden;
-    margin: 10px;
-    width : 700px;
+    display: table;
+    margin: auto;
+    width : 100%;
     box-sizing: border-box;
     counter-reset: date;
+    padding: 0;
 }
 ol::before{
     content: "";
     background-color: white;
-    height: 5rem;
+    height: 6rem;
     width: 14.285%; /* 14.285%만큼 더하기 */
     display: block;
     float: left;
@@ -21,7 +137,7 @@ ol::before{
 
 ol li {
     width: 14.285%;
-    height: 5rem;
+    height: 6rem;
     float: left;
     position: relative;
     margin: 0;
@@ -78,61 +194,36 @@ body {
 
 }
 
-#topbar{
-    width: 100%;
-    height: 70px;
-    line-height: 70px;
-    background-color: #4D4D4D;
-
+#filter_container {
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
 }
 
-#logo_container{
-    position: relative;
+.day {
     display: inline-block;
-    width: auto;
-    height: 40px;
-    margin: 10px;
-    margin-left: 40px;
+    width: calc(14.285% - 1px);
+    margin-left: -3.9px;
+    height: 3rem;
+    background-color: #F3F3F3;
+    text-align: center;
+    line-height: 3rem;
+    border-left: 1px solid black; 
 }
 
-
-
-
-#search_sidebar {
-    position : fixed;
-    height: 25px;
-    width: 280px;
-    left : 270px;
-    top : 1px;
-    z-index: 5;
-    opacity: 1;
-    padding: 10px 0;
-    border-bottom: solid 2px #0e080d;
+#day_container {
+    width: 100%;
+    background-color: #F3F3F3;
+    
 }
 
-#textfield {
-    position: absolute;
-    top : 15px;
-    left : 25px;
-    outline: none;
-    height: 30px;
-    width: 200px;
-    background-color: transparent;
-    border: transparent;
-    font-size: 15px;
-    color: #fff;
-}
-
-#search_img {
-    margin-top: 13px;
-    margin-right: 10px;
-    width: 15px;
-    height: 15px;
-    background-image: url(../img/calender/magnifying-glass.png);
-    background-size: contain;
-    float: right;
-}
-
-#search_submit {
-    display: none;
+.day_monday {
+    display: inline-block;
+    width: 14.285%;
+    margin-left: -3.9px;
+    height: 3rem;
+    background-color: #F3F3F3;
+    text-align: center;
+    line-height: 3rem; 
 }

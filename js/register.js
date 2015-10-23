@@ -59,13 +59,11 @@ function seungie(e) {
             password = passwordId.value;
         }
     }
-    /*
     if (page == 2) {
         alert("가입완료");
         //이곳에 가입완료 전송 소스
 
         return;
     }
-    */
     $.fn.fullpage.moveSlideRight();
 }

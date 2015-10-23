@@ -159,14 +159,16 @@ body {
 
 #select_box {
     position: relative;
-    display: inline-block;
+    top : 150px;
     float: left;
+    left : 50px;
 }
 
 #register_finish_btn {
     float: right;
-    margin-right: 80px;
-    margin-top: 50px;
+    width: 150px;
+    margin-top: 150px;
+    margin-right: 50px;
 }
 
 
@@ -313,6 +315,37 @@ body {
     margin-bottom: 20px;
 }
 
-.select_club {
+div#select_box {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background: url(../img/select_arrow.png) 180px center no-repeat; /* 화살표 이미지 */
+    border-bottom: 2px solid #555;
+}
+div#select_box label {
+    position: absolute;
+    font-size: 14px;
+    color: #555;
+    top: 13px;
+    left: 12px;
+    letter-spacing: 1px;
+}
+
+div#select_box select#club {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    line-height: 20px;
+    padding: 0 10px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE 8 */
+}
+#prev_btn {
+    z-index: 10;
+}
+
+.third_btn {
+    margin-top : 158px;
+    margin-left: 170px;
     
 }
