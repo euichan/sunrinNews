@@ -27,10 +27,6 @@
         <div id = "container">
         
         <div id = "cal_sidebar">
-           <div id = "sidebar_btn_container">
-                <input type="button" value="Month">
-                <input type="button" value="Week">
-           </div>
            
            <div id ="sidebar_serch_container">
                <input type="text">
@@ -47,9 +43,9 @@
         
         <div id ="cal_topbar">
             <div id = "month">
-               <input type="image" src="../img/calender/img_btn_left.png" onclick="seungie_prev(this)">
                 <font id="month_title"></font>
-                <input type="image" src="../img/calender/cal_btn_right.png" onclick="seungie_next(this)">
+               <input type="image" src="../img/calender/img_btn_left.png" onclick="seungie_prev(this)" class = "cal_other_month">
+                <input type="image" src="../img/calender/cal_btn_right.png" onclick="seungie_next(this)"class = "cal_other_month">
             </div>
         </div>
       <!-- 달력 테이블 시작 -->
