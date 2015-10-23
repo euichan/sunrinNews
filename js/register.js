@@ -12,17 +12,17 @@ function seungie(e) {
     if (e.id == "prev_btn") {
         $.fn.fullpage.moveSlideLeft();
         switch(url[5]){
-        case "secondPage":
+        case "info":
             page=0;
             break;
-        case "3rdPage":
+        case "profile":
             page=1;
             break;
         }
           return;
     }
     switch(url[5]){
-        case "secondPage":
+        case "info":
             page=2;
             break;
         
@@ -59,11 +59,12 @@ function seungie(e) {
             password = passwordId.value;
         }
     }
+    /*
     if (page == 2) {
         alert("가입완료");
         //이곳에 가입완료 전송 소스
 
         return;
-    }
+    }*/
     $.fn.fullpage.moveSlideRight();
 }

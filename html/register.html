@@ -116,27 +116,27 @@ var console = { log: function() {} };
             <div class="section " id="section0">
 
                 <!-- 학생 선택 div 시작 -->
-                <div class="slide active" data-anchor="firstPage">
+                <div class="slide active" data-anchor="user">
                     <div id="card_container">
                         <div id="student_container" onclick="seungie(this)">
-                            <img src="../img/register/student.png">
+                            <img class = "users" src="../img/register/student.png">
                         </div>
 
                         <div id="club_container" onclick="seungie(this)">
-                            <img src="../img/register/club.png">
+                            <img class = "users" src="../img/register/club.png">
                         </div>
 
                         <div id="school_container" onclick="seungie(this)">
-                            <img src="../img/register/school.png">
+                            <img class = "users" src="../img/register/school.png">
                         </div>
                     </div>
 
-                    <input type="button" value = "페이스북으로 로그인" id = "fb_register_btn">
+                    <a class = "socialaccount_provider facebook" href="javascript:allauth.facebook.login('', 'authenticate', 'login')"><input type="button" value = "페이스북으로 로그인" id = "fb_register_btn"></a>
                 </div>
                 <!-- 학생 선택 div 끝-->
 
                 <!-- 정보입력 div 시작 -->
-                <div class="slide" data-anchor="secondPage">
+                <div class="slide" data-anchor="info">
                     <div class="view">
                         <img src="../img/logo/main_logo_white.png">
                     </div>
@@ -164,14 +164,14 @@ var console = { log: function() {} };
                         <div id="profile_content">
                             이메일 (인증에 사용될 이메일이므로 정확히 기입해주세요)
                             <br>
-                            <input type="email" id="input_email" class="register_input_field">
+                            <input type="email" name="email" id="input_email" class="register_input_field">
                             <br> 비밀번호
 
                             <br>
-                            <input type="password" id="input_pw" class="register_input_field">
+                            <input type="password" name="password" id="input_pw" class="register_input_field">
                             <br> 비밀번호 확인
                             <br>
-                            <input type="password" id="input_pw_check" class="register_input_field">
+                            <input type="password" name="password2" id="input_pw_check" class="register_input_field">
                             <br> 성별
 
                             <br>
@@ -195,7 +195,7 @@ var console = { log: function() {} };
 
 
                 <!-- 프로필 입력 div 시작 -->
-                <div class="slide" data-anchor="3rdPage">
+                <div class="slide" data-anchor="profile">
                     <div class="view">
                         <img src="../img/logo/main_logo_white.png">
                     </div>
