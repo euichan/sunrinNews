@@ -147,6 +147,7 @@ tr {
     font-size: 0.8em;
     line-height: 1em;
     background: #eeeeee;
+    text-align: right;
 }
 ol li a {
     display: block;
