@@ -68,7 +68,7 @@ function setCalender() {
         dayContainer.childNodes[firstDay * 2 + (i * 2) + 1].setAttribute("class", "date_this_month");
         dayContainer.childNodes[firstDay * 2 + ((i) * 2) + 1].appendChild(dateText);
     }
-    for (var i = 0; i < dayContainer.childNodes.length - (lastDate+firstDay); i++) {
+    for (var i = 0; i < parseInt(dayContainer.childNodes.length/2) - (lastDate+firstDay); i++) {
         var dateText = document.createTextNode(i + 1);
         dayContainer.childNodes[(firstDay+lastDate) * 2 + (i * 2) + 1].setAttribute("class", "date_no_this_month");
         dayContainer.childNodes[(firstDay+lastDate) * 2 + ((i) * 2) + 1].appendChild(dateText);

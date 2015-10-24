@@ -258,8 +258,7 @@ body {
 #month_title {
     position: absolute;
     font-size: 1em;
-    width: 200px;
+    width: 150px;
     top: 5px;
     left : 50%;
-    margin-left : -25px;
 }
