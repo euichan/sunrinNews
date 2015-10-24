@@ -190,6 +190,8 @@ body {
 
 #post_type_btn_container {
     position: relative;
+    width:100%;
+    
 }
 
 .type_btn {
@@ -214,9 +216,64 @@ body {
     color: white;
     background-color: #555;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .text_post_box {
     width: calc(100% - 1px);
     height: 100px;
+}
+.close_btn{
+    width:20px;
+    height:20px;
+    position: inherit;
+    float:right;
+}
+.festival_dialog
+{
+    position: relative;
+    width: 225px;
+    margin-left:calc(50%-50px);
+    height: 120px;
+    padding: 0px;
+    top:20px;
+    background: #777777;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-color:#777777;
+    border-radius: 7px;
+    left:calc(50% - 112.5px);
+    
+}
+
+.festival_dialog:after 
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 15px 15px;
+    border-color: #777777 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -15px;
+    left: 97px;
+}
+
+
+.festival_dialog_input {
+    width:17%;
+}
+.show_dialog{
+    transition: 0.5s;
+    opacity: 1;
+    transform-origin: top;
+    transform: scale(1,1);
+}
+.hide_dialog{
+    transition: 0.3s;
+    opacity: 0;
+        transform-origin: top;
+
+    transform: scale(0,0);
 }

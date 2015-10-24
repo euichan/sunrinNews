@@ -1,33 +1,63 @@
-var count=0;
+var count = 0;
 var postContentsBox;
 var addBox;
-window.onload=function(){
+var festivalCheck = false;
+window.onload = function () {
     postContentsBox = document.getElementById("post_contents_box");
     addBox = document.getElementById("add_post_box");
 }
-function seungie_post(obj){
+
+function seungie_post(obj) {
     count++;
-    
+
     var postBox = document.createElement("div");
     var imgPostBox = document.createElement("div");
     var postNum = document.createElement("div");
     var textPostBox = document.createElement("div");
+    var closeButton = document.createElement("input");
     var textArea = document.createElement("textarea");
-    
     var num = document.createTextNode(count);
-    
-    postBox.setAttribute("class","post_box");
+
+    closeButton.setAttribute("onclick", "deletePost(this)");
+    closeButton.setAttribute("type", "image");
+    closeButton.setAttribute("class", "close_btn");
+    closeButton.setAttribute("src", "../img/post/close.png");
+    postBox.setAttribute("class", "post_box");
     imgPostBox.setAttribute("class", "img_post_box");
-    postNum.setAttribute("class","post_num");
-    textPostBox.setAttribute("class","text_post_box");
-    textArea.setAttribute("rows","5","cols","30");
-    
+    postNum.setAttribute("class", "post_num");
+    textPostBox.setAttribute("class", "text_post_box");
+    textArea.setAttribute("rows", "5");
+    textArea.setAttribute("cols", "30");
+
     postNum.appendChild(num);
     imgPostBox.appendChild(postNum);
     textPostBox.appendChild(textArea);
-        postBox.appendChild(imgPostBox);
 
+    postBox.appendChild(closeButton);
+    postBox.appendChild(imgPostBox);
     postBox.appendChild(textPostBox);
-    
-    postContentsBox.insertBefore(postBox,addBox);
+
+    postContentsBox.insertBefore(postBox, addBox);
+}
+
+function deletePost(obj) {
+    count--;
+    var parentNode = obj.parentElement.parentElement;
+    var max = obj.parentElement.childNodes[1].childNodes[0].innerHTML;
+    parentNode.removeChild(obj.parentElement);
+    for (var i = 0; i < count; i++) {
+        parentNode.childNodes[5 + i].childNodes[1].childNodes[0].innerHTML = i + 1;
+    }
+}
+
+function festival(obj) {
+    if (!festivalCheck) {
+        var dialog=document.getElementsByClassName("festival_dialog")[0];
+        dialog.setAttribute("class", "show_dialog festival_dialog");
+        festivalCheck = true;
+    } else {
+        var dialog=document.getElementsByClassName("festival_dialog")[0];
+        dialog.setAttribute("class", "hide_dialog festival_dialog");
+        festivalCheck = false;
+    }
 }

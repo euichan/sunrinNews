@@ -22,7 +22,12 @@
             <div id = post_type_btn_container>
                     <input type="button" class = "type_btn" value="공지">
                     <input type="button" class = "type_btn" value="홍보">
-                    <input type="button" class = "type_btn" value="행사">
+                    <input type="button" class = "type_btn" value="행사" onclick="festival(this)">
+                <div class="festival_dialog hide_dialog">
+                    <br>
+                    <input type="text" class="festival_dialog_input" id="year"/>년&nbsp;&nbsp;<input type="text" class="festival_dialog_input" id="month"/>월&nbsp;&nbsp;
+                    <input type="text" class="festival_dialog_input" id="day"/>일&nbsp;&nbsp;<br><br><input type="text" class="festival_dialog_input" id="clock"/>시&nbsp;&nbsp;<input type="text" class="festival_dialog_input" id="minute"/>분&nbsp;&nbsp;
+                </div>
             </div>
         </div>
         <div id = "contents_container">

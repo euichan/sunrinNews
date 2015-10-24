@@ -4,14 +4,17 @@ var emailSign;
 var password;
 var page = 0;
 var sex;
+var firstName;
+var lastName;
 var img;
-
+var club;
+var urlCount=6;//  /구분 ex) http://127.0.0.1:14493/sunrinNews/html/register.html   <- 5개 + 1 
 function seungie(e) {
     var url=window.location.href.split("/");
     
-    if (e.id == "prev_btn") {
+    if (e.id == "btn_left") {
         $.fn.fullpage.moveSlideLeft();
-        switch(url[5]){
+        switch(url[urlCount]){
         case "secondPage":
             page=0;
             break;
@@ -21,13 +24,17 @@ function seungie(e) {
         }
           return;
     }
-    switch(url[5]){
+    switch(url[urlCount]){
         case "secondPage":
-            page=2;
+            
+            page=1;
             break;
         
         case undefined:
-            page=1;
+            page=0;
+            break;
+        case "3rdPage":
+            page=2;
             break;
     }
     if (page == 0) {
@@ -42,22 +49,25 @@ function seungie(e) {
     }
     if (page == 1) {
         //두번째 페이지
-        var emailId = document.getElementById("input_email");
-        var passwordId = document.getElementById("input_pw");
-        var passwordCheckId = document.getElementById("input_pw_check");
-        var sexName = document.getElementsByName("sex");
-
+        var emailId = document.getElementsByClassName("full_field")[0];
+        var passwordId = document.getElementsByClassName("full_field")[1];
+        var passwordCheckId = document.getElementsByClassName("full_field")[2];
+        var sexId = document.getElementsByClassName("forty_field_combobox")[0];
+        var clubId = document.getElementsByClassName("sixty_field_combobox")[0];
+        var firstNameId = document.getElementsByClassName("forty_field")[0];
+        var lastNameId = document.getElementsByClassName("sixty_field")[0];
+        firstName=firstNameId.value;
+        lastName=lastNameId.value;
         email = emailId.value;
-        var male = sexName[0].checked;
-        var women = sexName[1].checked;
-        if (male) {
-            sex = 1;
-        } else {
-            sex = 0;
+        password=passwordId.value;
+        var passwordCheck = passwordCheckId.value;
+        if(!password==passwordCheck){
+            alert("Error code 1: 패스워드가 틀립니다 -by SeungEui");
+            password="";
+            return;
         }
-        if (passwordId.value == passwordCheckId.value) {
-            password = passwordId.value;
-        }
+        sex=sexId.selectedIndex;
+        club=clubId.options[clubId.selectedIndex].innerHTML;
     }
     if (page == 2) {
         alert("가입완료");

@@ -1,78 +1,38 @@
 /* todo: 백그라운드 이미지 최적화, */
 
 body {
-    background-image: url('../img/main/background_sample.png');
+    background-image: url('../images/background_school.png');
     background-repeat: no-repeat;
+    background-size: cover;
     outline : none;
 }
 
 
 /* 회원선택 css 시작 */
 
-#logo_container {
-    position: relative;
-    /* border: 1px solid black; */
+.card_container {
+    border: 3px solid rgba(255, 255, 255, 0.3);
     margin: auto;
     margin-top: 100px;
-    width: 50%;
-    height: auto;
-    text-align: center;
-}
+    width: 900px;
+    height: 350px;
+    padding-top: 100px;
+    background-color: rgba(0,0,0,0.3);
 
-#logo_container img {
-    max-width: 400px
-}
-
-#card_container {
-    position: relative;
-    /* border: 1px solid black; */
-    width: 70%;
-    height: auto;
-    margin: auto;
-    margin-top: 200px;
-    text-align: center;
 }
 
 #student_container {
-    transition: 0.5s;
-    position: relative;
-    display: inline-block;
     /* border: 1px solid black; */
-    margin: 10px;
 }
-#student_container:hover {
-    transition: 0.5s;
-    transform: scale(1.08,1.08);
-    cursor:pointer;
-}
+
 #club_container {
-    transition: 0.5s;
-
-    position: relative;
-    display: inline-block;
     /* border: 1px solid black; */
-    margin: 10px;
 }
-#club_container:hover {
-    transition: 0.5s;
-    transform: scale(1.08,1.08);
-    cursor:pointer;
 
-}
 #school_container {
-    transition: 0.5s;
-
-    position: relative;
-    display: inline-block;
     /* border: 1px solid black; */
-    margin: 10px;
 }
-#school_container:hover {
-    transition: 0.5s;
-    transform: scale(1.08,1.08);
-    cursor:pointer;
 
-}
 #card_container img {
     max-width: 200px;
 }
@@ -348,4 +308,122 @@ div#select_box select#club {
     margin-top : 158px;
     margin-left: 170px;
     
+}
+
+#information_input_container {
+    border: 1px solid black;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#information_input_topbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 70px;
+    
+}
+
+#information_input_content {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+
+.level_card {
+    width: 180px;
+    margin : 0 40px;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    padding-left: 7.2px;
+}
+.level_card:hover {
+    transition: 0.5s;
+    transform: scale(1.08,1.08);
+    cursor:pointer;
+    padding-right: 7.2px;
+    padding-left: 3.1px;
+}
+
+
+.level_img {
+    position: absolute;
+    width : 100%;
+    margin-left: -90px;
+}
+
+.focused {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.focused:hover {
+    opacity: 1;
+}
+
+#btn_right {
+    float: left;
+}
+
+#btn_left {
+    float: right;
+}
+
+#information_layout_left {
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    width: 40%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+}
+
+#information_layout_right {
+    display: inline-block;
+    float: right;
+    border: 1px solid black;
+    width: 40%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+}
+.input_field {
+    border: 2px solid white;
+    float: left;
+    background-color: transparent;
+    height : 35px;
+    padding-left: 20px;
+    font-size: 1em;
+    color: white;
+}
+
+.full_field {
+    width: calc(100% - 24px);
+}
+
+.forty_field {
+    width : 30%;
+    float: left;
+}
+
+.sixty_field {
+    width : 50%;
+    margin-left : 5%;
+}
+
+.register_text {
+    float: left;
+}
+
+.forty_field_combobox {
+    width: calc(30% + 24px);
+}
+
+.sixty_field_combobox {
+    width: calc(50% + 24px);
+    margin-left: 5%;
 }
