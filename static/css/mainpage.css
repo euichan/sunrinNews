@@ -1,0 +1,132 @@
+
+
+
+
+.popular_news_container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: fixed;
+    background-color: #eee;
+    height : 500px !important;
+    width: 100% !important;
+    top : 70px;
+    display:-webkit-inline-box;
+}
+
+.popular_news_box {
+    position:relative;
+    margin : 20px;
+    height: 400px ;
+    width : 300px ;
+    background-color: white;
+    display:block;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+#all_contents_container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding-top : 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    margin-top: 550px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.spacer {
+    opacity: 0;
+    width: 50px;
+}
+
+#f_nav_container {
+    position: absolute;
+    top : 0px;
+    width: 250px;
+    height : 100%;
+    background-color: beige;
+    box-shadow: 5px 0 10px rgba(0,0,0,.15);
+    z-index: 1;
+}
+
+#board_container {
+    position: relative;
+    width : calc(100% - 250px);
+    left : 250px;
+    background-color: aquamarine;
+}
+
+.board {
+    position: relative;
+    padding : 20px;
+    width: calc(90% - 140px);
+    margin-left: calc(10% - 20px);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: cadetblue;
+    border-radius: 7px;
+}
+
+.category {
+    display: block;
+    width: 100px;
+    height: 60px;
+    margin-left: 80px;
+    background: transparent;
+    border: solid 3px transparent;
+    font-family: Arial;
+    color: gray;
+    font-size: 1em;
+    transition: 0.3s ease;
+    text-align: center;
+    outline: none;
+}
+.category:hover {
+    color: red;
+    border-bottom: 3px solid red;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#floating_btn {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: url(../img/club.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    background-color: blue;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transition: .5s;
+}
+#floating_btn:hover {
+    transform:scale(1.08,1.08) rotate(45deg);   
+}
+
+
+
+#name_container {
+    width: 300px;
+    height: 70px;
+    float: right;
+    line-height: 70px;
+    text-align: left;
+    
+}
+
+.topbar {
+    width: 100%;
+    height: 
+}
+
+#topbar_text {
+    color: white;
+    font-size: 1em;    
+}

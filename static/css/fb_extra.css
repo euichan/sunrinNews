@@ -1,0 +1,458 @@
+
+#fb_extra_title {
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin-top: 100px; 
+    text-align: center;
+}
+
+#information_input_container {
+    border: 1px solid black;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* todo: 백그라운드 이미지 최적화, */
+
+body {
+    background-image: url('../images/background_school.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline : none;
+}
+
+
+/* 회원선택 css 시작 */
+
+.card_container {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    margin: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 350px;
+    padding-top: 100px;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+#student_container {
+    /* border: 1px solid black; */
+}
+
+#club_container {
+    /* border: 1px solid black; */
+}
+
+#school_container {
+    /* border: 1px solid black; */
+}
+
+#card_container img {
+    max-width: 200px;
+}
+
+
+/* 프로필 회원가입 css 시작 */
+
+#profile_container {
+    width: 650px;
+    height: 500px;
+    background-color: #E4E4E4;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#profile_title {
+    width: 650px;
+    height: 100px;
+    background-color: #D7D8D8;
+}
+
+#title_container {
+    position: relative;
+    display: inline-block;
+    float: left;
+    /* border: 1px solid black; */
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#font_register {
+    font-size: 50px;
+    color: #606060;
+}
+
+#step_container {
+    position: relative;
+    display: inline-block;
+    float: right;
+    /* border: 1px solid black; */
+    margin-top: calc((100px - 45px)/2)
+}
+
+.step_input_information {
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid black; */
+}
+
+.step {
+    position: relative;
+    display: inline-block;
+    /* border: 1px solid black; */
+    margin-right: 50px;
+}
+
+.step_number {
+    font-size: 15px;
+    color: #606060;
+}
+
+#step_text_information {
+    font-size: 20px;
+    color: #606060;
+}
+
+#step_text_profile {
+    font-size: 20px;
+    color: #F10800;
+}
+
+#profile_img_container {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top : 50px;
+}
+
+
+/* todo: 동아리 선택 드롭다운박스 커스터마이즈 */
+
+
+/* todo: 동아리 선택 드롭다운박스 커스터마이즈 후 css 재설정 */
+
+#select_box {
+    position: relative;
+    top : 150px;
+    float: left;
+    left : 50px;
+}
+
+#register_finish_btn {
+    float: right;
+    width: 150px;
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+
+/* 회원가입 정보입력 부분 시작 */
+
+#profile_content {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.register_input_field {
+    background-color: #E4E4E4;
+    border: 0px;
+    border-bottom: 1px solid #7D7D7D;
+    width: 50%;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+    outline: none;
+}
+
+
+
+#input_year {
+    background-color: #E4E4E4;
+    border: 0px;
+    border-bottom: 1px solid #7D7D7D;
+    width: 100px;
+    height: 30px;
+    outline: none;
+}
+
+#input_month {
+    background-color: #E4E4E4;
+    border: 0px;
+    border-bottom: 1px solid #7D7D7D;
+    width: 100px;
+    height: 30px;
+    outline: none;
+}
+
+#input_day {
+    background-color: #E4E4E4;
+    border: 0px;
+    border-bottom: 1px solid #7D7D7D;
+    width: 100px;
+    height: 30px;
+    outline: none;
+}
+
+#fb_register_btn {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 100px;
+    font-size: 1rem;
+    background: rgba(0,0,0,.5);
+    width : 250px;
+    height: 50px;
+    transition: 0.5s;
+    outline : none;
+    color : white;
+}
+#fb_register_btn:hover {
+    background-color: #4371ff;
+}
+
+#email_id_btn {
+    position: absolute;
+    float: right;
+}
+
+.reg_btn{
+    border: 2px solid #333;
+    font-size: 0.8rem;
+    width : 50px;
+    height: 30px;
+    transition: 0.2s;
+    outline : none;
+    color: white;
+    background-color: #555;
+}
+
+.reg_btn:hover{
+    border-color: #555;
+    background-color: #333;
+}
+
+/*checkbox*/
+
+.autoLogin {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    margin-left: 2px;
+    border: solid 1px white;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: left;
+    position: relative;
+}
+
+.autoLogin label {
+    cursor: pointer;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    left: 1px;
+    top: 1px;
+    background: transparent;
+
+}
+
+.autoLogin label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    top: 4px;
+    left: 4px;
+}
+
+.autoLogin input[type=radio]:checked + label:after {
+    color: #fff;
+    opacity: 1;
+}
+
+.autologin {
+    margin-top: -20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+div#select_box {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background: url(../img/select_arrow.png) 180px center no-repeat; /* 화살표 이미지 */
+    border-bottom: 2px solid #555;
+}
+div#select_box label {
+    position: absolute;
+    font-size: 14px;
+    color: #555;
+    top: 13px;
+    left: 12px;
+    letter-spacing: 1px;
+}
+
+div#select_box select#club {
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    line-height: 20px;
+    padding: 0 10px;
+    opacity: 0;
+    filter: alpha(opacity=0); /* IE 8 */
+}
+#prev_btn {
+    z-index: 10;
+}
+
+.third_btn {
+    margin-top : 158px;
+    margin-left: 170px;
+
+}
+
+
+
+#information_input_topbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 70px;
+
+}
+
+#information_input_content {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+
+.level_card {
+    width: 180px;
+    margin : 0 40px;
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    padding-left: 7.2px;
+}
+.level_card:hover {
+    transition: 0.5s;
+    transform: scale(1.08,1.08);
+    cursor:pointer;
+    padding-right: 7.2px;
+    padding-left: 3.1px;
+}
+
+
+.level_img {
+    position: absolute;
+    width : 100%;
+    margin-left: -90px;
+}
+
+.focused {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.focused:hover {
+    opacity: 1;
+}
+
+#btn_right {
+    float: right;
+}
+
+#btn_left {
+    float: left;
+}
+
+#information_layout_left {
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+    width: 40%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+}
+
+#information_layout_right {
+    display: inline-block;
+    float: right;
+    border: 1px solid black;
+    width: 40%;
+    height: 400px;
+    padding-top: 100px;
+    color: white;
+}
+.input_field {
+    border: 2px solid white;
+    float: left;
+    background-color: transparent;
+    height : 35px;
+    padding-left: 20px;
+    font-size: 1em;
+    color: white;
+}
+
+.full_field {
+    width: calc(100% - 24px);
+}
+
+.forty_field {
+    width : 30%;
+    float: left;
+}
+
+.sixty_field {
+    width : 50%;
+    margin-left : 5%;
+}
+
+.register_text {
+    float: left;
+}
+
+.forty_field_combobox {
+    width: calc(20% + 24px);
+}
+
+.sixty_field_combobox {
+    width: calc(50% + 24px);
+    margin-left: 7%;
+}
+
+#fb_extra_title_text {
+    color: white;
+    font-size: 3em;
+}
+
+#profile_img_btn {
+    margin-top: 100px;
+}
+
+#information_input {
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}

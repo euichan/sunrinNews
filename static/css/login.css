@@ -1,0 +1,103 @@
+/* todo: 백그라운드 이미지 최적화, */
+
+body {
+     background-image: url('../images/background_school.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+
+/* 회원선택 css 시작 */
+
+#logo_container {
+     position: relative;
+     /* border: 1px solid black; */
+     margin: auto;
+     margin-top: 100px;
+     width: 50%;
+     height: auto;
+     text-align: center;
+}
+
+
+/* 프로필 회원가입 css 시작 */
+
+#profile_container {
+     background-color: rgba(0, 0, 0, 0.3);
+     border: 3px solid rgba(255, 255, 255, 0.3);
+     width: 500px;
+     height: 600px;
+     margin: auto;
+     margin-top: 50px;
+     text-align: center;
+}
+
+#profile_title {
+     width: 500px;
+     height: 100px;
+     background-color: rgba(0, 0, 0, 0.6);
+}
+
+#title_container {
+     position: relative;
+     display: inline-block;
+     float: left;
+     /* border: 1px solid black; */
+     margin-left: 50px;
+     margin-top: 25px;
+}
+
+#font_register {
+     font-size: 50px;
+     color: white;
+}
+
+#profile_content {
+     position: relative;
+     margin: auto;
+     margin-top: 70px;
+     margin-bottom: 100px;
+     width: 60%;
+     text-align: center;
+}
+
+.login_input {
+    border: 2px solid white;
+     width: 100%;
+    float: left;
+    background-color: transparent;
+    height : 35px;
+    padding-left: 20px;
+    font-size: 1em;
+    color: white;
+     margin: auto;
+}
+
+#profile_text {
+     font-size: 20px;
+     color: rgba(255, 255, 255, 0.3);
+}
+
+#email_container {
+     text-align: left;
+}
+
+#pw_container {
+     text-align: left;
+}
+
+#login_btn {
+     color: white;
+     font-size: 10px;
+     background: transparent;
+     padding: 10px 25px 10px 25px;
+     border: solid #666 1px;
+     text-decoration: none;
+     transition: 0.5s;
+}
+
+#login_btn:hover {
+     background: #76D2FB;
+     color: white;
+     text-decoration: none;
+}

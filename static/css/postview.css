@@ -1,0 +1,156 @@
+
+#contents_container {
+    position: absolute;
+    left: calc(50% - 500px);
+    top: calc(5% + 70px);
+    width: 1000px;
+    height: 730px;
+    background-color: #e4e4e4;
+}
+
+#preview_img_container {
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    background-color: #e4e4e4;
+    border: 2px solid #aaa;
+    background-color: black;
+    text-align: center;
+}
+
+#comment_container {
+    position: relative;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    background-color: #e4e4e4;
+    border: 2px solid #aaa;
+    overflow-x: hidden;
+}
+
+#preview_img {
+    position: relative;
+    height: 80%;
+    margin-top: -1px;
+}
+
+#preview_description {
+    height: calc(20% - 40px);
+    background-color: #e4e4e4;
+    padding: 20px;
+    margin-top : -4px;
+    text-align: left;
+}
+
+#title_container {
+    position: fixed;
+    width: 360px;
+    padding:20px;
+    z-index: 1;
+    background-color: #e4e4e4;
+}
+
+.thumbnail {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+#title_date {
+    float: right;
+    margin-top: 10px;
+}
+
+#title_author {
+    float: left;
+    margin-top : 10px;
+    margin-left: 15px;
+}
+
+#comment_detail_description {
+    position: fixed;
+    margin-top: 204px;
+    width : 360px;
+    margin-left: -1px;
+    padding: 20px;
+    background-color: #e4e4e4;
+    border: solid 2px #aaa;
+}
+
+#like_view_container {
+    position: fixed;
+    margin-top: 173px;
+    margin-left: 3px;
+    width: 376px;
+    padding-right: 20px;
+    text-align: right;
+    height: 30px;
+    color : #aaa;
+    border-top: solid 2px #999;
+    background-color: #e4e4e4;
+}
+
+#like_icon {
+    margin-top : 5px;
+    margin-left: 20px;
+    margin-right: 5px;
+    height: 19px;
+    
+}
+
+#view_icon {
+    height: 15px;
+    margin-right: 5px;
+    top: 7.5px;
+}
+
+.comment_container {
+    padding: 20px;
+    border : solid 1px #aaa;
+}
+
+.comment_thumbnail_box {
+    display: inline-block;
+    float: left;
+    font-size: 0.7em;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.thumbnail_comment {
+    width : 50px;
+    height: 50px;
+}
+
+.comment_box {
+    display: inline-block;
+    width : 275px;
+    height: auto;
+    top: -30px;
+    font-size: 1.1em;
+}
+
+.spacer {
+    height: 270px;
+}
+
+#input_comment_field_container {
+    position: fixed;
+    height: 60px;
+    margin-top: -62px;
+    margin-left: 600px;
+    width : 400px;
+    border: 2px solid #aaa;
+    z-index: 10;
+    background-color: #e4e4e4;
+}
+
+.bottom_spacer {
+    height: 60px;
+}

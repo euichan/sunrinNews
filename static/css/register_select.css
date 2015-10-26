@@ -1,0 +1,97 @@
+
+
+#fb_container {
+    color: #4676ff;
+    border: 2px solid #4676ff;
+}
+
+#fb_container:hover {
+    background: #4676ff;
+    color: white;
+}
+
+#email_container {
+    color: #ff7015;
+    border: 2px solid #ff7015;
+}
+
+#email_container:hover {
+    background: #ff6f15;
+    color: white;
+}
+
+.reg_btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-size: 1rem;
+    background: transparent;
+    width : 250px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.reg_btn:hover {
+    text-decoration: none;
+}
+
+#register_box_container {
+    position: relative;
+    text-align: center;
+    top: 180px;
+    left : 50%;
+    margin-left: -400px;
+    padding-top: 100px;
+    border-top : solid 1px gray;
+    border-bottom: solid 1px gray;
+    width : 800px;
+}
+
+
+
+#reg_title {
+    margin-top: -170px;
+    margin-bottom: 90px;
+}
+
+#email_reg_box {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+}
+
+#fb_reg_box {
+    display: inline-block;
+    width: 50%;
+    margin-left: -1px;
+    float: right;
+    padding-top: 30px;
+    border-left: 1px solid black;
+}
+
+.reg_context {
+    font-size: 0.8rem;
+}
+
+#login_btn {
+    color: #666;
+    font-size: 10px;
+    background: transparent;
+    padding: 10px 25px 10px 25px;
+    border: solid #666 1px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#login_btn:hover {
+    background: #333;
+    color: white;
+    text-decoration: none;
+}
+
+#reg_submit_container {
+    position: relative;
+    top: 100px;
+}
+

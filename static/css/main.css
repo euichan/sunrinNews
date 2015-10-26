@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    width:100%;
+    background-color: #F0F1F2;
+}
+html,body{
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+}
+
+
+#topbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-image: url(../images/background_topbar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#logo {
+    width: auto;
+    height: 70px;
+}
+
+.topbar {
+    
+}
+
+#logo_container {
+    
+}
