@@ -1,20 +1,3 @@
-<!--  
-
-<font>성별</font>
-<br>
-<select class="input_field forty_field_combobox">
-<option>남</option>
-<option>여</option>
-</select>
-
-<select class="input_field sixty_field_combobox">
-<option>Layer7</option>
-<option>Applepi</option>
-</select>
-
--->
-
-
 <!doctype html>
 <html>
 
@@ -30,25 +13,32 @@
        <font id = 'fb_extra_title_text'>페이스북 추가 정보 입력</font>
    </div>
    
-    <div id="information_input_container">
-        <div id="information_input_topbar">
-            <div id="information_input_content">
-               <input type = "image" src="../static/images/profile_img_btn.png" id = "profile_img_btn">
-                   <div id = "information_input">
-                            <br>
-                            <select class="input_field forty_field_combobox">
-                                <option>남</option>
-                                <option>여</option>
-                            </select>
-
-                            <select class="input_field sixty_field_combobox">
-                                <option>Layer7</option>
-                                <option>Applepi</option>
-                       </select>
-                </div>
-                </div>
-            </div>
+<form>
+    <div class="card_container">
+        <div id="student_container" class="level_card" onclick="seungie(this)">
+            <img src="../static/images/student_unfocused.png" class="level_img">
+            <img src="../static/images/student.png" class="level_img focused">
         </div>
+
+        <div id="club_container" class="level_card" onclick="seungie(this)">
+            <img src="../static/images/school_unfocused.png" class="level_img">
+            <img src="../static/images/school.png" class="level_img focused">
+        </div>
+
+        <div id="school_container" class="level_card" onclick="seungie(this)">
+            <img src="../static/images/club_unfocused.png" class="level_img">
+            <img src="../static/images/club.png" class="level_img focused">
+        </div>
+    </div>
+   
+   <div id="club_select_container">
+       <select class="input_field sixty_field_combobox">
+           <option>Layer7</option>
+           <option>Applepi</option>
+       </select>
+   </div>
+</form>
+   
 </body>
 
 </html>
