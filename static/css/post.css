@@ -309,3 +309,12 @@ body {
     margin-top: 20px;
     position: relative;
 }
+
+.textarea_container {
+    width: 213px;
+    margin: auto;
+    height: 92px;
+    border-color: black;
+    resize: none;
+    pl
+}
