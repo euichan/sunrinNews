@@ -1,5 +1,4 @@
 /* todo: 백그라운드 이미지 최적화, */
-
 body {
     background-image: url('../images/background_school.png');
     background-repeat: no-repeat;
@@ -9,16 +8,6 @@ body {
 
 
 /* 회원선택 css 시작 */
-
-.register_logo_container {
-    border: 1px solid black;
-    width: 50%;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
-    
-}
 
 
 .card_container {
@@ -446,9 +435,16 @@ div#select_box select#club {
 #btn_right {
     float: right;
 }
-.register_title_text {
-    border: 1px solid black;
-    width: 50%;
+
+.register_logo_container {
+    width: 80%;
     margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register_title_container {
+    margin: auto;
+    width: 80%;
     text-align: center;
 }

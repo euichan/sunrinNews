@@ -1,156 +1,250 @@
-
-#contents_container {
-    position: absolute;
-    left: calc(50% - 500px);
-    top: calc(5% + 70px);
-    width: 1000px;
-    height: 730px;
-    background-color: #e4e4e4;
+* {
+padding:0px;
+margin:0px;
+overflow:hidden;
 }
 
-#preview_img_container {
-    position: absolute;
-    width: 600px;
-    height: 100%;
-    background-color: #e4e4e4;
-    border: 2px solid #aaa;
-    background-color: black;
-    text-align: center;
+body{
+background-color:white;
 }
 
-#comment_container {
-    position: relative;
-    left: 60%;
-    width: 40%;
-    height: 100%;
-    background-color: #e4e4e4;
-    border: 2px solid #aaa;
-    overflow-x: hidden;
+#layer {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	z-index : 300;
+	width : 100vw;
+	height : 100vh;
+	background-color:rgba(0,0,0,.6);
 }
 
-#preview_img {
-    position: relative;
-    height: 80%;
-    margin-top: -1px;
+#layer > #first{
+	position : absolute;
+	width : 960px;
+	top : 5vh;
+	left : calc( 50vw - 680px );
+	height : 90vh;
 }
 
-#preview_description {
-    height: calc(20% - 40px);
-    background-color: #e4e4e4;
-    padding: 20px;
-    margin-top : -4px;
-    text-align: left;
+#layer > #second {
+	position : absolute;
+	width : 400px;
+	left : calc( 50vw + 280px );
+	background-color : #ddd;
+	padding-left : 0px;
+	top : 5vh;
+	height : 90vh;
 }
 
-#title_container {
-    position: fixed;
-    width: 360px;
-    padding:20px;
-    z-index: 1;
-    background-color: #e4e4e4;
+#second #title {
+	position : relative;
+	font-size : 30px;
+	margin-left : 15px;
+	padding-top : 20px;
+	margin-bottom : 20px;
 }
 
-.thumbnail {
-    position: relative;
-    float: left;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+#second #title > #close {
+	position : absolute;
+	width : 30px;
+	height : 30px;
+	top : 10px;
+	right : 10px;
+	background : url('../images/close.png') no-repeat;
+	background-position : 50%;
 }
 
-h3 {
-    display: inline-block;
+#second .profile_img {
+	width : 50px;
+	height : 50px;
+	border-radius : 30px;
+	vertical-align : middle;
+	display : inline-block;
+	margin-left : 15px;
+}
+#second #replywrap .profile_img{
+	vertical-align : top;
 }
 
-#title_date {
-    float: right;
-    margin-top: 10px;
+#second #replywrap{
+	overflow-y : scroll;
+	height : calc( 75vh - 255px );
 }
-
-#title_author {
-    float: left;
-    margin-top : 10px;
-    margin-left: 15px;
+#second #replywrap::-webkit-scrollbar { 
+    display: none; 
 }
-
-#comment_detail_description {
-    position: fixed;
-    margin-top: 204px;
-    width : 360px;
-    margin-left: -1px;
-    padding: 20px;
-    background-color: #e4e4e4;
-    border: solid 2px #aaa;
-}
-
-#like_view_container {
-    position: fixed;
-    margin-top: 173px;
-    margin-left: 3px;
-    width: 376px;
-    padding-right: 20px;
-    text-align: right;
-    height: 30px;
-    color : #aaa;
-    border-top: solid 2px #999;
-    background-color: #e4e4e4;
-}
-
-#like_icon {
-    margin-top : 5px;
-    margin-left: 20px;
-    margin-right: 5px;
-    height: 19px;
+#second .reply {
+	margin-bottom : 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999999;
     
 }
 
-#view_icon {
-    height: 15px;
-    margin-right: 5px;
-    top: 7.5px;
+#second #writereply{
+	vertical-align : middle;
+	height : 50px;
 }
 
-.comment_container {
-    padding: 20px;
-    border : solid 1px #aaa;
+#second #writereply .profile_img{
+	margin-top : 10px;
+	width : 30px;
+	height : 30px;
+}
+#second #writereply input{
+	margin-top : 6px;
+	height:36px;
+	width : 280px;
+	vertical-align : top;
+}
+#second #writereply input:focus{
+	outline : 0;
 }
 
-.comment_thumbnail_box {
-    display: inline-block;
-    float: left;
-    font-size: 0.7em;
-    margin-right: 25px;
+
+#second #writereply #send{
+	display:inline-block;
+	background-color:red;
+	width : 40px;
+	padding : 7px;
+	text-align : center;
+	margin-left : -5px;
+	margin-top : 6px;
+	vertical-align : top;
+	color : white;
+}
+
+#send {
+    display:inline-block;
+	background-image: url(../images/send_btn.png);
+	width : 40px;
+	padding : 7px;
+    height: 25px;
+	text-align : center;
+	margin-left : -5px;
+	margin-top : 6px;
+	vertical-align : top;
+	color : white;
+    
+}
+
+#second .name {
+	display : inline-block;
+	font-size : 15px;
+	vertical-align : middle;
+	position : relative;
+	width : 325px;
+}
+
+#second .name span{
+	font-size : 20px;
+}
+
+#second > .name {
+	font-size : 22px;
+}
+
+#second .name #date {
+	position : absolute;
+	top : -2px;
+	right : 15px;
+}
+
+#second #brbox {
+	text-align : right;
+	padding : 10px;
+	border-top : 2px solid black;
+	margin-top : 15px;
+	border-bottom : 2px solid black;
+	margin-bottom : 15px;
+	vertical-align : middle;
+}
+#second #brbox img{
+	vertical-align : middle;
+	margin-right : 5px;
+}
+
+#preview {
+	height : 100vh;
+	display : block;
+	margin : auto;
+	width : 960px;
+	background-color : black;
+	position:relative;
+}
+
+
+#preview > img {
+	display : block;
+	margin : auto;
+	height : 90vh;
+}
+
+#preview > #left{
+	position : absolute;
+	top : calc( 50vh - 100px );
+	left : 15px;
+	height : 110px;
+	width : 50px;
+	background : url('../images/left.png');
+	background-position : 50%;
+}
+
+#preview > #right{
+	position : absolute;
+	top : calc( 50vh - 100px );
+	right : 15px;
+	height : 110px;
+	width : 50px;
+	background : url('../images/right.png');
+	background-position : 50%;
+}
+
+#box {
+	width : 959px;
+	height : 98px;
+	margin : auto;
+	background-color : #ddd;
+	border-top : 2px solid #bbb;
+	border-right : 1px solid #aaa;
+}
+
+#box > div {
+	margin : 10px 0 0 15px;
+}
+
+#box > div > #text {
+	margin-bottom : 17px;
+	font-size : 20px;
+}
+
+#box > div > #tag {
+	color : blue;
+}
+
+@media screen and ( min-width : 960px ){
+}
+
+@media screen and ( max-width : 1360px ){
+	#layer > #first {
+		left : calc( 50vw - 480px );
+	}
+	#layer > #second {
+		display : none;
+	}
+}
+
+
+#text_container {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    padding-top: 20px; 
+}
+
+#tag_container {
+    width: 90%;
+    margin: auto;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
-}
-
-.thumbnail_comment {
-    width : 50px;
-    height: 50px;
-}
-
-.comment_box {
-    display: inline-block;
-    width : 275px;
-    height: auto;
-    top: -30px;
-    font-size: 1.1em;
-}
-
-.spacer {
-    height: 270px;
-}
-
-#input_comment_field_container {
-    position: fixed;
-    height: 60px;
-    margin-top: -62px;
-    margin-left: 600px;
-    width : 400px;
-    border: 2px solid #aaa;
-    z-index: 10;
-    background-color: #e4e4e4;
-}
-
-.bottom_spacer {
-    height: 60px;
 }

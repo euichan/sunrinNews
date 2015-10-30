@@ -12,33 +12,34 @@
    <div id = "fb_extra_title">
        <font id = 'fb_extra_title_text'>페이스북 추가 정보 입력</font>
    </div>
-   
-<form>
+     
     <div class="card_container">
-        <div id="student_container" class="level_card" onclick="seungie(this)">
-            <img src="../static/images/student_unfocused.png" class="level_img">
+        <div id="student_container" class="level_card" onclick="document.getElementById('id_level').value='0';">                 <img src="../static/images/student_unfocused.png" class="level_img">
             <img src="../static/images/student.png" class="level_img focused">
         </div>
 
-        <div id="club_container" class="level_card" onclick="seungie(this)">
+    <div id="school_container" class="level_card" onclick="document.getElementById('id_level').value='2';">
             <img src="../static/images/school_unfocused.png" class="level_img">
             <img src="../static/images/school.png" class="level_img focused">
         </div>
 
-        <div id="school_container" class="level_card" onclick="seungie(this)">
+    <div id="club_container" class="level_card" onclick="document.getElementById('id_level').value='1';">
             <img src="../static/images/club_unfocused.png" class="level_img">
             <img src="../static/images/club.png" class="level_img focused">
         </div>
     </div>
    
    <div id="club_select_container">
-       <select class="input_field sixty_field_combobox">
-           <option>Layer7</option>
-           <option>Applepi</option>
-       </select>
+       <form method="POST">
+           <select class="input_field sixty_field_combobox">
+               <option>Layer7</option>
+               <option>Applepi</option>
+           </select>
+           <input name="level" id="id_level" type="hidden">
+           <input vaue="가입" type="submit">
+       </form>
    </div>
 </form>
    
 </body>
-
 </html>

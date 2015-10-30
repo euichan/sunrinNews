@@ -1,0 +1,184 @@
+*{
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+}
+#first{
+	position : absolute;
+	top:0px;
+	left:0px;
+	width : 200px;
+	height : 100vh;
+	border-right : 2px solid #eee;
+	padding-top : 40px;
+}
+#first div{
+	margin : 30px 0px 40px 40px;
+}
+#first div input{
+	display:none;
+}
+#first div input + label{
+	display : inline-block;
+	width : 22px;
+	height : 22px;
+	vertical-align : top;
+	background : url('../images/radio.jpg');
+	margin-right : 10px;
+}
+#first div input[type="radio"]:checked + label{
+	background : url('../images/radio_checked.jpg');
+}
+#second {
+	position : absolute;
+	top : 0px;
+	left : 200px;
+	width : 760px;
+	height : 100vh;
+	border-right : 2px solid #ccc;
+	padding-top : 20px;
+}
+#second > div {
+	display : block;
+	margin : auto;
+	margin-bottom : 10px;
+	width : 580px;
+	height : 110px;
+	border : 2px solid #bbb;
+	font-size: 0px;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+}
+#second > div > div {
+	display : inline-block;
+	width : 298px;
+	font-size: initial;
+	letter-spacing: initial;
+	word-spacing: initial;
+}
+#second > div > .box {
+	overflow:visible;
+	vertical-align : top;
+}
+#second > div > div > div {
+	margin-left : 14px;
+}
+#second > div > div > .title{
+	margin-top : 12px;
+	font-size : 18px;
+	font-weight : bold;
+}
+#second > div > div > .tag{
+	margin-top : 10px;
+}
+#second > div > div > .user{
+	margin-top : 10px;
+}
+#second > div > .img {
+	width : 100px;
+	height : 110px;
+	border : 0px;
+	border-right : 2px solid #bbb;
+	vertical-align : top;
+	background : url('../images/dummy.jpg');
+	background-size: 100px 110px;
+	background-position : 50%;
+	padding:0px;
+}
+#second > div > .preview {
+	width : 90px;
+	height : 110px;
+	background : url('../images/preview.png');
+	background-position : 50%;
+}
+
+#second > div > .apply {
+	width : 90px;
+	height : 110px;
+	background-color : black;
+	background : url('../images/apply.png');
+	background-position : 50%;
+}
+
+#third {
+	position : absolute;
+	top : 0px;
+	left : 50vw;
+	width : 50vw;
+}
+
+#third > #preview {
+	height : calc( 100vh - 100px );
+	width : 100%;
+	background-color : black;
+	position:relative;
+}
+
+#third > #preview > #close {
+	position : absolute;
+	width : 30px;
+	height : 30px;
+	top : 10px;
+	right : 10px;
+	background : url('../images/close.png') no-repeat;
+	background-position : 50%;
+}
+
+#third > #preview > img {
+	display : block;
+	margin : auto;
+	height : calc( 100vh - 100px );
+}
+
+#third > #preview > #left{
+	position : absolute;
+	top : calc( 50vh - 100px );
+	left : 15px;
+	height : 110px;
+	width : 50px;
+	background : url('../images/left.png');
+	background-position : 50%;
+}
+
+#third > #preview > #right{
+	position : absolute;
+	top : calc( 50vh - 100px );
+	right : 15px;
+	height : 110px;
+	width : 50px;
+	background : url('../images/right.png');
+	background-position : 50%;
+}
+
+#third > #box {
+	width : 50vw;
+	height : 100px;
+	background-color : #ddd;
+	border-top : 2px solid #bbb;
+}
+
+#third > #box > div {
+	margin : 10px 0 0 15px;
+}
+
+#third > #box > div > #text {
+	margin-bottom : 17px;
+	font-size : 20px;
+}
+
+#third > #box > div > #tag {
+	color : blue;
+}
+
+@media screen and ( min-width : 1280px ){
+	#third {
+		left : 960px;
+		width : calc( 100vw - 960px );
+	}
+}
+@media screen and ( max-width : 1279px ){
+	#third {
+		display : none;
+	}
+}
+

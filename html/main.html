@@ -1,68 +1,61 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <link rel = stylesheet href = "../static/css/main.css">
-        <link rel  = stylesheet href = "../static/css/mainpage.css">
-        <script src="../static/js/jquery.js"></script>
-        <script src="../static/js/mainpage.js"></script>
-        <script src="../static/js/InfiniteScroll.js"></script>
 
-        <title>SunrinNews</title>
-    </head>
-    <body>
-        <div id="topbar">
-            <img src="../static/images/main_logo.png" id="logo">
-        
-            <div id = "name_container">
-                <font id = "topbar_text">전의찬 님 환영합니다!</font>
+<head>
+    <meta charset="UTF-8">
+    <link rel=s tylesheet href="../static/css/main.css">
+    <link rel=s tylesheet href="../static/css/mainpage.css">
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/mainpage.js"></script>
+    <script src="../static/js/InfiniteScroll.js"></script>
+
+    <title>SunrinNews</title>
+</head>
+
+<body>
+    <div id="topbar">
+        <img src="../static/images/main_logo.png" id="logo">
+
+        <div id="name_container">
+            <font id="topbar_text">안녕하세요 전의찬님!</font>
+        </div>
+
+    </div>
+
+
+    <ol class="popular_news_container">
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+        <li class="popular_news_box spacer"></li>
+    </ol>
+
+
+    <div id="all_contents_container">
+        <div id="f_nav_container">
+            <input type="button" class="category" value="가나다라" onclick="ClickedSchool()"></input>
+            <input type="button" class="category" value="가나다라" onclick="ClickedClub()"></input>
+            <input type="button" class="category" value="가나다라" onclick="ClickedClub()"></input>
+        </div>
+        <div id="board_container">
+            <div id="board">
+
+                <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+                <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+                <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+                <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+                <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+                <li class="popular_news_box"><img class="news_img" src="../static/images/news_sample.jpg"></li>
+
             </div>
-            
         </div>
-        
-        
-        <ol class = "popular_news_container">
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-            <!--야매로 오른쪽 띄움-->
-            <li class="popular_news_box spacer"></li>
-        </ol>
-
-
-        <div id="all_contents_container">
-            <div id="f_nav_container">
-                <input type="button" class = "category" value="학생회 뉴스" onclick="ClickedSchool()"></input>
-                <input type="button" class = "category" value="동아리 뉴스" onclick="ClickedClub()"></input>
-                <input type="button" class = "category" value="학생 뉴스" onclick="ClickedClub()"></input>
-        </div>
-    <div id="board_container">
-        <div class="board">
-        
-        <li class="popular_news_box"><img class = "news_img" src = "../static/images/news_sample.jpg"></li>
-        
-        </div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
-        <div class="board"></div>
     </div>
+    <div id="floating_btn">
     </div>
-<div id="floating_btn">
-</div>
 </body>
+
 </html>

@@ -15,7 +15,7 @@
     height: 400px ;
     width : 300px ;
     background-color: white;
-    display:block;
+    display:inline-block;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
 }
 
@@ -52,21 +52,18 @@
     z-index: 1;
 }
 
-#board_container {
-    position: relative;
-    width : calc(100% - 250px);
-    left : 250px;
-    background-color: aquamarine;
+#board_container {    
+	position: relative;
+    width : 1372px;
+    left : 360px;
 }
 
-.board {
+#board {
     position: relative;
-    padding : 20px;
-    width: calc(90% - 140px);
-    margin-left: calc(10% - 20px);
+    width: 1377px;
+    margin : auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: cadetblue;
     border-radius: 7px;
 }
 
@@ -106,7 +103,7 @@
     transition: .5s;
 }
 #floating_btn:hover {
-    transform:scale(1.08,1.08) rotate(45deg);   
+    transform:scale(1.08,1.08);
 }
 
 

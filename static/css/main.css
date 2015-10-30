@@ -1,12 +1,11 @@
 body{
-    margin: 0;
     width:100%;
     background-color: #F0F1F2;
 }
 html,body{
+    margin: 0;
     height:100%;
     width:100%;
-    overflow-x: hidden;
 }
 
 

@@ -1,91 +1,206 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <link rel = stylesheet href = "../static/css/main.css">
-        <link rel  = stylesheet href = "../static/css/postview.css">
-        <script src="../static/js/jquery.js"></script>
 
-        <script src="../static/js/InfiniteScroll.js"></script>
+<head>
+	<link rel="stylesheet" href="../static/css/postview.css">
+	<meta charset="utf-8">
+</head>
 
-        <title>SunrinNews</title>
-    </head>
-    <body>
-        <div id="topbar">
-            <img src="../static/images/main_logo.png" id="logo">
-        </div>
-        <div id="contents_container">
-            <div id="preview_img_container">
-                <img src="../static/images/club.png" id="preview_img">
-                <div id="preview_description">설명</div>
+<body>
+	<div id="layer">
+		<div id="first">
+			<div id='preview'>
+				<img src="../static/images/dummy.jpg">
+				<div id='left'></div>
+				<div id='right'></div>
+			</div>
+            
+            <!--
+			<div id='box'>
+				<div>
+					<div id="text">텍스트</div>
+					<div id="tag">태그</div>
+				</div>
+			</div>
+
+-->
+		</div>
+		<div id="second">
+			<div id="title">
+				<div id='close'></div>
+				제목
+			</div>
+            
+           
+			<img src="../static/images/dummy.jpg" class="profile_img">
+			<div class="name">
+				작성자
+				<div id="date">
+					2015.10.20
+				</div>
+			</div>
+            
+            <div id = "text_container">
+                가나다라마바사 ...더보기
             </div>
-            <div id="comment_container">
-                <div id="title_container">
-                    <h1>선린뉴스 1호</h1>
-                    <img src="../static/images/profile.png" class="thumbnail"><h3 id="title_author">신명</h3><h3 id="title_date">2015.10.20</h3>
-                </div>
-                <div id = "like_view_container">
-                    <img src="../static/images/eye71.png" id = "view_icon">100
-                    <img src="../static/images/heart95.png" id ="like_icon">100
-                </div>
-                <div id = "comment_detail_description">
-                    선린뉴스 1호
-                </div>
-                <div class= "comment_container">
-                    <div class= "spacer"></div>
-                    <div class = "comment_thumbnail_box">
-                        <img src="../static/images/profile.png" class="thumbnail_comment">
-                        <br><br>
-                        전의찬
-                        <br><br>
-                        2015.10.24
-                        <br>
-                        06:05
-                    </div>
-                    <div class = "comment_box">우와아아아 정말 개쩌네요ㅎㅎ
-                    씨발 코딩 좆같네</div>
-                </div>
-                <div class= "comment_container">
-                    <div class = "comment_thumbnail_box">
-                        <img src="../static/images/profile.png" class="thumbnail_comment">
-                        <br><br>
-                        전의찬
-                        <br><br>
-                        2015.10.24
-                        <br>
-                        06:05
-                    </div>
-                    <div class = "comment_box">우와아앙 정말 개쩌네요ㅎㅎ</div>
-                </div>
-                <div class= "comment_container">
-                    <div class = "comment_thumbnail_box">
-                        <img src="../static/images/profile.png" class="thumbnail_comment">
-                        <br><br>
-                        전의찬
-                        <br><br>
-                        2015.10.24
-                        <br>
-                        06:05
-                    </div>
-                    <div class = "comment_box">우와아앙 정말 개쩌네요ㅎㅎ</div>
-                </div>
-                <div class= "comment_container">
-                    <div class = "comment_thumbnail_box">
-                        <img src="../static/images/profile.png" class="thumbnail_comment">
-                        <br><br>
-                        전의찬
-                        <br><br>
-                        2015.10.24
-                        <br>
-                        06:05
-                    </div>
-                    <div class = "comment_box">우와아앙 정말 개쩌네요ㅎㅎ</div>
-                </div>
-                <div class="spacer bottom_spacer"></div>
+            
+            <div id = "tag_container">
+                태그
             </div>
-        <div id="input_comment_field_container"></div>
-        </div>
+            
+			<div id="brbox">
+				<img src="../static/images/view.png">100 <img src="../static/images/like.png">100
+			</div>
+            
+            
+            
+            
+			<div id="replywrap">
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나다가나가나다가나다다가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
 
-    </body>
-    <script src="../static/js/postview.js"></script>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+				<div class="reply">
+					<img src="../static/images/dummy.jpg" class="profile_img">
+					<div class="name">
+						이름
+						<br>
+						<span>가나다<br>가나다</span>
+						<div id="date">
+							2015.10.20
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="writereply">
+				<img src="../static/images/dummy.jpg" class="profile_img">
+				<input type="text">
+				<div id="send">
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+
 </html>
