@@ -1,85 +1,78 @@
 <!-- todo: 웹버전 디자인, 코딩 -->
 <!doctype html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <link rel = stylesheet href = "../static/css/main.css">
-        <link rel  = stylesheet href = "../static/css/post.css">
-        <script src="../static/js/jquery.js"></script>
-        <script src="../static/js/InfiniteScroll.js"></script>
 
-        <title>SunrinNews</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="/static/css/main.css">
+    <link rel=stylesheet href="/static/css/post.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/post.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-        <div id = "topbar">
-            <div id = "logo_container">
-                <img src = "../static/images/main_logo.png">
-            </div>
+    <script src="/static/js/jquery.preimage.js"></script>
+    <title>SunrinNews</title>
+</head>
+
+<body>
+
+    <div id="topbar">
+        <div id="logo_container">
+            <img src="../images/main_logo.png">
         </div>
+    </div>
 
-        <div id = "posthtml_title_box"> 글쓰기</div>
-        <div id = "contents_container">
-            <div id = post_left_container>
-                <div id = post_type_btn_container>
-                    <input type="button" class = "type_btn" value="공지">
-                    <input type="button" class = "type_btn" value="홍보">
-                    <input type="button" class = "type_btn" value="행사">
-                </div>
-                <div class="bubble">
-                    <div id="date_box">
-                        <input type="text" class="date_tf">년</input>
+    <div id="posthtml_title_box"> 글쓰기</div>
+    <div id="contents_container">
+        <div id="post_left_container">
+            <div id="post_type_btn_container">
+                <input type="button" class="type_btn" value="공지">
+                <input type="button" class="type_btn" value="홍보">
+                <input type="button" class="type_btn" value="행사">
+            </div>
+            <div class="bubble">
+                <div id="date_box">
+                    <input type="text" class="date_tf">년</input>
                     <input type="text" class="date_tf">월</input>
-                <input type="text" class="date_tf">일</input>
-        </div>
-        <div id="time_box">
-            <input type="text" class="date_tf">년</input>
-        <input type="text" class="date_tf">일</input>
-    </div>
-</div>
-</div>
-<div id = "contents_box">
-    <div id = "input_container">
-        <input type="text" class="input" placeholder = "제목을 입력하시오">
-        <input type="text" class="input" placeholder="태그를 입력하시오">
-    </div>
+                    <input type="text" class="date_tf">일</input>
+                </div>
+                <div id="time_box">
+                    <input type="text" class="date_tf">년</input>a
+                    <input type="text" class="date_tf">일</input>
+                </div>
+            </div>
 
-    <div id = "post_contents_box">
-        <!--이미지 첨부 박스-->
-        <div class = "spacer"></div>
-        <div class = "post_box">
-            <div class = "img_post_box">
-                <div class = "post_num">1</div>
-            </div>
-            <textarea class ="textarea_container" placeholder="여기에 글을 입력하세요"></textarea>
         </div>
-        <div class = "post_box">
-            <div class = "img_post_box">
-                <div class = "post_num">2</div>
+        <div id="contents_box">
+            <div id="input_container">
+                <input type="text" class="input" placeholder="제목을 입력하세요">
+                <input type="text" class="input" placeholder="추가한 태그가 이곳에 입력됩니다">
             </div>
-            <textarea class ="textarea_container" placeholder="여기에 글을 입력하세요"></textarea>
+
+            <div id="post_contents_box">
+                <!--이미지 첨부 박스-->
+                <div class="spacer"></div>
+
+                <label class="post_box" id="add_post_box" for="add_image">
+                    <div class="add_post">+</div>
+                </label>
+                <input type="file" multiple class="file" id="add_image" style="display:none;" onchange="seungie_post(this)" name="img" />
+                <div class="spacer"></div>
+            </div>
             
-        </div>
-        <div class = "post_box">
-            <div class = "img_post_box">
-                <div class = "post_num">3</div>
+            
+            <div id="submit_btn_container">
+                <input type="button" id="submit_btn" value="게시하기">
             </div>
-            <textarea class ="textarea_container" placeholder="여기에 글을 입력하세요"></textarea>
         </div>
-        <div id = "add_post_box" class = "post_box">
-            <div class = "add_post">+</div>
+    </div>
+    <div id="post_right_container">
+        <div class="tagcontainer">
+            <input type="search" id="tagsearch" placeholder="태그검색" />
+            <div class="tagbox">정통, 웹, 테경, 멀티, 선린, 디콘, 모콘, 교내, 교외, 쩜오기, 수상</div>
         </div>
-        <div class = "spacer"></div>
     </div>
-    <div id = "submit_btn_container">
-        <input type="button" id = "submit_btn" value="게시하기">
-    </div>
-</div>
-<div id = "post_right_container">
-    <div class="tagcontainer">
-        <input type="search" id="tagsearch" placeholder="태그검색"/>
-        <div class="tagbox">정통, 웹, 테경, 멀티, 선린, 디콘, 모콘, 교내, 교외, 쩜오기, 수상</div>
-</div>
-</div>
 </body>
+
 </html>
