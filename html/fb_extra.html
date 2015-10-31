@@ -3,43 +3,76 @@
 
 <head>
     <meta charset="utf-8">
-     <link rel="stylesheet" href="../static/css/main.css">
-        <link rel="stylesheet" href="../static/css/fb_extra.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/fb_extra.css">
+    <script>
+        function selectLevel(idx)
+        {
+            cards = document.getElementsByClassName("level_img");
+            cards[idx*2+1].className = cards[idx*2+1].className.replace(' focused','');
+            for(var i=0; i< cards.length / 2; i++)
+            {
+                if(i!=idx) {
+                    cards[i*2+1].className = cards[i*2].className + ' focused';
+                }
+            }
+            level = document.getElementById("id_level");
+            switch(idx)
+            {
+                case 0:
+                    level.value=0; break;
+                case 1:
+                    level.value=2; break;
+                case 2:
+                    level.value=1; break;
+            }
+            console.log(document.getElementById("id_level").value);
+        }
+    </script>
 </head>
 
 <body>
-   
-   <div id = "fb_extra_title">
-       <font id = 'fb_extra_title_text'>페이스북 추가 정보 입력</font>
-   </div>
-     
+
+    <div id="fb_extra_title">
+        <font id='fb_extra_title_text'>페이스북 추가 정보 입력</font>
+    </div>
+
+
     <div class="card_container">
-        <div id="student_container" class="level_card" onclick="document.getElementById('id_level').value='0';">                 <img src="../static/images/student_unfocused.png" class="level_img">
+        <div id="student_container" class="level_card" onclick="selectLevel(0);">
+            <img src="../static/images/student_unfocused.png" class="level_img">
             <img src="../static/images/student.png" class="level_img focused">
         </div>
 
-    <div id="school_container" class="level_card" onclick="document.getElementById('id_level').value='2';">
+        <div id="school_container" class="level_card" onclick="selectLevel(1);">
             <img src="../static/images/school_unfocused.png" class="level_img">
             <img src="../static/images/school.png" class="level_img focused">
         </div>
 
-    <div id="club_container" class="level_card" onclick="document.getElementById('id_level').value='1';">
+        <div id="club_container" class="level_card" onclick="selectLevel(2);">
             <img src="../static/images/club_unfocused.png" class="level_img">
             <img src="../static/images/club.png" class="level_img focused">
         </div>
+
+
+
+        <div id="club_select_container">
+            <form method="POST">
+               {% csrf_token %}
+               {{form.club}}
+                <select class="input_field sixty_field_combobox">
+                    <option>Layer7</option>
+                    <option>Applepi</option>
+                </select>
+                <input name="level" id="id_level" type="hidden">
+                <input id="register_finish_btn" value="확인" type="submit" class="reg_btn" src="/static/images/register/register_finish_btn.png" >
+            </form>
+        </div>
+        </form>
     </div>
-   
-   <div id="club_select_container">
-       <form method="POST">
-           <select class="input_field sixty_field_combobox">
-               <option>Layer7</option>
-               <option>Applepi</option>
-           </select>
-           <input name="level" id="id_level" type="hidden">
-           <input vaue="가입" type="submit">
-       </form>
-   </div>
-</form>
-   
+
+
+
 </body>
+
 </html>

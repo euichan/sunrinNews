@@ -3,7 +3,7 @@ function seungie(e) {
     if (e.id == "btn_left") {
         $.fn.fullpage.moveSlideLeft();
     }
-   
+    
     $.fn.fullpage.moveSlideRight();
 }
 var csrftoken;
