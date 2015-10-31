@@ -4,14 +4,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel=stylesheet href="/static/css/main.css">
-    <link rel=stylesheet href="/static/css/post.css">
-    <script src="/static/js/jquery.js"></script>
-    <script src="/static/js/post.js"></script>
+    <link rel=stylesheet href="../static/css/main.css">
+    <link rel=stylesheet href="../static/css/post.css">
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/post.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
-    <script src="/static/js/jquery.preimage.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>SunrinNews</title>
 </head>
 
@@ -27,8 +26,8 @@
     <div id="contents_container">
         <div id="post_left_container">
             <div id="post_type_btn_container">
-                <input type="button" class="type_btn" value="공지">
-                <input type="button" class="type_btn" value="홍보">
+                <input type="button" onclick="clickNoti()" class="type_btn" value="공지">
+                <input type="button" onclick="clickPro()" class="type_btn" value="홍보">
                 <input type="button" onclick = "clickContent()" class="type_btn" value="행사">
             </div>
             <div class="bubble" style="display:none;">
@@ -63,7 +62,7 @@
             
             
             <div id="submit_btn_container">
-                <input type="button" id="submit_btn" value="게시하기">
+                <input type="button" onclick="post()" id="submit_btn" value="게시하기">
             </div>
         </div>
     </div>
@@ -72,6 +71,9 @@
             <input type="search" id="tagsearch" placeholder="태그검색" />
             <div class="tagbox">정통, 웹, 테경, 멀티, 선린, 디콘, 모콘, 교내, 교외, 쩜오기, 수상</div>
         </div>
+    </div>
+    <div class="alert alert-danger" style="display:none;">
+        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
     </div>
 </body>
 

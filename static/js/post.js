@@ -2,9 +2,12 @@ var count=0;
 var postContentsBox;
 var addBox;
 var bubbleCheck=true;
+var buttonCheck=0;
+var type_btn;
 window.onload=function(){
     postContentsBox = document.getElementById("post_contents_box");
     addBox = document.getElementById("add_post_box");
+    type_btn=document.getElementsByClassName("type_btn");
 }
 function seungie_post(obj){
     count++;
@@ -49,12 +52,89 @@ function deletePost(obj){
 }
 function clickContent(){
     var bubble=document.getElementsByClassName("bubble")[0];
+    if(buttonCheck==2){
+        buttonCheck=-1;
+        for(var i=0;i<type_btn.length;i++){
+            type_btn[i].style.backgroundColor="#fff";
+            type_btn[i].style.color="#000";
+
+        }
+        bubble.style.display="none";
+        bubbleCheck=true;
+        return 0;
+    }
+    buttonCheck=2;
     if(bubbleCheck){
         bubble.style.display="block";
         bubbleCheck=false;
     }
-    else{
-        bubble.style.display="none";
-        bubbleCheck=true;
+    
+    for(var i=0;i<type_btn.length;i++){
+        type_btn[i].style.backgroundColor="#fff";
+        type_btn[i].style.color="#000";
+
     }
+    type_btn[buttonCheck].style.backgroundColor="#555";
+                type_btn[buttonCheck].style.color="#fff";
+
+}
+function post(){
+    var date=document.getElementsByClassName("date_tf");
+    var error=document.getElementsByClassName("alert")[0];
+    for(var i=0;i<date.length;i++){
+        if(!isNumber(date[i].value)){
+            error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;캘린더 날짜는 날짜 형식에 맞춰서 입력해주세요!";
+            $(error).fadeIn(200,function(){
+                setTimeout(function(){$(error).fadeOut(500,function(){});},1000);
+            });
+        }
+    }
+}
+function isNumber(s) {
+  s += ''; // 문자열로 변환
+  s = s.replace(/^\s*|\s*$/g, ''); // 좌우 공백 제거
+  if (s == '' || isNaN(s)) return false;
+  return true;
+}
+function clickPro(){
+    if(buttonCheck==2){
+        clickContent();
+    }
+    if(buttonCheck==1){
+        buttonCheck=-1;
+        for(var i=0;i<type_btn.length;i++){
+            type_btn[i].style.backgroundColor="#fff";
+            type_btn[i].style.color="#000";
+
+        }
+        return 0;
+    }
+    buttonCheck=1;
+    for(var i=0;i<type_btn.length;i++){
+        type_btn[i].style.backgroundColor="#fff";
+        type_btn[i].style.color="#000";
+    }
+    type_btn[buttonCheck].style.backgroundColor="#555";
+    type_btn[buttonCheck].style.color="#fff";
+}
+function clickNoti(){
+    if(buttonCheck==2){
+        clickContent();
+    }
+
+    if(buttonCheck==0){
+        buttonCheck=-1;
+        for(var i=0;i<type_btn.length;i++){
+            type_btn[i].style.backgroundColor="#fff";
+            type_btn[i].style.color="#000";
+        }
+        return 0;
+    }
+    buttonCheck=0;
+    for(var i=0;i<type_btn.length;i++){
+        type_btn[i].style.backgroundColor="#fff";
+        type_btn[i].style.color="#000";
+    }
+    type_btn[buttonCheck].style.backgroundColor="#555";
+    type_btn[buttonCheck].style.color="#fff";
 }
