@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/static/css/main.css">
-    <link rel="stylesheet" href="/static/css/fb_extra.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/fb_extra.css">
     <script>
         function selectLevel(idx)
         {
@@ -34,17 +34,17 @@
 <body>
 
     <div id="fb_extra_title">
-        <font id='fb_extra_title_text'>페이스북 회원가입</font>
+        <font id='fb_extra_title_text'>페이스북 추가 정보 입력</font>
     </div>
 
 
     <div class="card_container">
        <div id = "profile_preview_container">
-          <div id = "profile_preview" style="background-image: url('{{ form.img }}'); background-size: 100% 100%;">
+          <div id = "profile_preview" style="background-image: url('../static/images/dummy.jpg'); background-size: 100% 100%;">
           </div>
           
           <div id = "name_container">
-                <font id = "text_hello">안녕하세요 {{ form.name }}님</font>
+                <font id = "text_hello">안녕하세요 전의찬님!</font>
           </div>
            
        </div>
@@ -52,18 +52,18 @@
        
        
         <div id="student_container" class="level_card" onclick="selectLevel(0);">
-            <img src="/static/images/student_unfocused.png" class="level_img">
-            <img src="/static/images/student.png" class="level_img focused">
+            <img src="../static/images/student_unfocused.png" class="level_img">
+            <img src="../static/images/student.png" class="level_img focused">
         </div>
 
         <div id="school_container" class="level_card" onclick="selectLevel(1);">
-            <img src="/static/images/school_unfocused.png" class="level_img">
-            <img src="/static/images/school.png" class="level_img focused">
+            <img src="../static/images/school_unfocused.png" class="level_img">
+            <img src="../static/images/school.png" class="level_img focused">
         </div>
 
         <div id="club_container" class="level_card" onclick="selectLevel(2);">
-            <img src="/static/images/club_unfocused.png" class="level_img">
-            <img src="/static/images/club.png" class="level_img focused">
+            <img src="../static/images/club_unfocused.png" class="level_img">
+            <img src="../static/images/club.png" class="level_img focused">
         </div>
 
 
@@ -72,10 +72,10 @@
             <form method="POST">
                {% csrf_token %}
                {{form.club}}
-                <!--select class="input_field sixty_field_combobox">
+                <select class="input_field sixty_field_combobox">
                     <option>Layer7</option>
                     <option>Applepi</option>
-                </select-->
+                </select>
                 <input name="level" id="id_level" type="hidden">
                 <input id="register_finish_btn" value="확인" type="submit" class="reg_btn" src="/static/images/register/register_finish_btn.png" >
             </form>
