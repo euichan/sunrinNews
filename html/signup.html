@@ -111,7 +111,7 @@ var console = { log: function() {} };
                     css3: true,
                     afterSlideLoad: slideHandler,
                 });
-                
+
                 $.uploadPreview({
                     input_field: "#id_img",
                     preview_box: "#profile_img",
@@ -234,17 +234,17 @@ var console = { log: function() {} };
                                         <option value="1">남</option>
                                         <option value="0">여</option>
                                        </select>
-
-                                       <select  class="input_field sixty_field_combobox" id="id_club" name="club">
+                                       {{ form.club }}
+                                       <!--select  class="input_field sixty_field_combobox" id="id_club" name="club">
                                         <option value="0">Layer7</option>
                                         <option value="1">Applepi</option>
-                                       </select>
+                                       </select-->
                                    </div>
                                    <div id = "information_layout_right">
-                                       <font>비밀번호</font><br><input type="password" class="input_field full_field" id="id_password" name="password"><br><br><br><br>
+                                       <font>비밀번호</font><br><input type="password" class="input_field full_field" id="id_password1" name="password1"><br><br><br><br>
                                        <font>비밀번호 확인</font><br><input type="password" class="input_field full_field" id="id_password2" name="password2"><br>
                                        <br><br><br><br>
-                                       <input id="info_btn" value="확인" type="button" class="reg_btn" src="/static/images/register/register_finish_btn.png" onclick="sendData();">
+                                       <input id="info_btn" onclick="seungie(this)" value="다음" type="button" class="reg_btn" src="/static/images/register/register_finish_btn.png" onclick="sendData();">
                                    </div>
                                    <input type="file" id="id_img" onchange="change_img()" name="img" style="display:none">
                                </form>
@@ -265,13 +265,13 @@ var console = { log: function() {} };
                     <div id="information_input_container">
                         <div id="information_input_topbar">
                             <div id="information_input_content">
-                                   
+
                                 <div id = "profile_text_container">
                                     <img id = "btn_left" src="/static/images/register_btn_left.png" onclick="seungie(this)">
                                     <font id = "profile_title_text">프로필 사진 선택</font>
                                     <img id = "btn_right" src="/static/images/register_btn_right.png" onclick="seungie(this)">
                                 </div>
-                                
+
                                 <div id = "padder">
                                     <div id="profile_img">
                                         <a style="cursor:pointer" onclick="upload_img();">
@@ -279,12 +279,12 @@ var console = { log: function() {} };
 
                                         </a>
                                     </div>
-                                    
+
                                 </div>
                                 <input id="register_finish_btn" value="확인" type="button" class="reg_btn" src="/static/images/register/register_finish_btn.png" onclick="sendData();">
-                                
-                                
-                                    
+
+
+
                             </div>
                         </div>
                     </div>

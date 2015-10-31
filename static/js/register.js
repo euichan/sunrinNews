@@ -3,11 +3,10 @@ function seungie(e) {
     if (e.id == "btn_left") {
         $.fn.fullpage.moveSlideLeft();
     }
-    
+   
     $.fn.fullpage.moveSlideRight();
 }
 var csrftoken;
-/*
 window.onload = function () {
     $.ajaxSetup({
         beforeSend: function (xhr, settings) {
@@ -19,7 +18,7 @@ window.onload = function () {
         }
     });
 }
-*/
+
 function upload_img() {
     $('#id_img').trigger('click');
 }
@@ -33,29 +32,25 @@ function change_img() {
 
 function slideHandler( anchorLink, index, slideAnchor, slideIndex){
     if(slideIndex==2)
-        {
+    {
             
-        }
+    }
 }
 
 function sendData() {
     var formData = new FormData($('form')[0]);
-    console.log(formData);
-   // for (var i = 0; i < $("input[name=file]")[0].files.length; i++) {
-        //첫번째 파일태그
-   //     formData.append("img", $("input[name=file]")[0].files[i]);
-  //  }
     
     formData.append('level',level); 
     formData.append('img',$("input[name=img]")[0].files[0]);
     formData.append('csrfmiddlewaretoken',csrftoken);
     $.ajax({
-        url: '/signup.php',
+        url: '/accounts/signup',
         processData: false,
         contentType: false,
         data: formData,
         type: 'POST',
         success: function (result) {
+            window.location = '/accounts/signupcomplete'
         }
     });
 }
