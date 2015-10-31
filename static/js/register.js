@@ -25,15 +25,10 @@ function upload_img() {
 }
 
 function change_img() {
-    if($('#id_img')[0].value) {
-        $('#camera')[0].style.display="none";
-        $('#img_mold')[0].style.display="block";
-    }
-    else {
-        $('#camera')[0].style.display="block";
-        $('#img_mold')[0].style.display="none";
-    
-    }
+    if($('#id_img')[0].value) 
+        $('#preview')[0].src = $('#preview')[0].src.replace('_btn.','_mold.');
+    else 
+        $('#preview')[0].src = $('#preview')[0].src.replace('_mold.','_btn.');
 }
 
 function slideHandler( anchorLink, index, slideAnchor, slideIndex){
