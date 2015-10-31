@@ -19,7 +19,7 @@
 
     <div id="topbar">
         <div id="logo_container">
-            <img src="../images/main_logo.png">
+            <img src="/static/images/main_logo.png">
         </div>
     </div>
 
@@ -29,16 +29,16 @@
             <div id="post_type_btn_container">
                 <input type="button" class="type_btn" value="공지">
                 <input type="button" class="type_btn" value="홍보">
-                <input type="button" class="type_btn" value="행사">
+                <input type="button" onclick = "clickContent()" class="type_btn" value="행사">
             </div>
-            <div class="bubble">
+            <div class="bubble" style="display:none;">
                 <div id="date_box">
                     <input type="text" class="date_tf">년</input>
                     <input type="text" class="date_tf">월</input>
                     <input type="text" class="date_tf">일</input>
                 </div>
                 <div id="time_box">
-                    <input type="text" class="date_tf">년</input>a
+                    <input type="text" class="date_tf">년</input>
                     <input type="text" class="date_tf">일</input>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 var count=0;
 var postContentsBox;
 var addBox;
+var bubbleCheck=true;
 window.onload=function(){
     postContentsBox = document.getElementById("post_contents_box");
     addBox = document.getElementById("add_post_box");
@@ -44,5 +45,16 @@ function deletePost(obj){
     parentNode.removeChild(obj.parentElement);
     for (var i=0;i<count;i++){
         parentNode.childNodes[5+i].childNodes[1].childNodes[0].innerHTML=i+1;
+    }
+}
+function clickContent(){
+    var bubble=document.getElementsByClassName("bubble")[0];
+    if(bubbleCheck){
+        bubble.style.display="block";
+        bubbleCheck=false;
+    }
+    else{
+        bubble.style.display="none";
+        bubbleCheck=true;
     }
 }
