@@ -1,70 +1,71 @@
-var choice;
-var email;
-var emailSign;
-var password;
-var page = 0;
-var sex;
-var img;
-
+var level=0;
 function seungie(e) {
-    var url=window.location.href.split("/");
-    if (e.id == "prev_btn") {
+    if (e.id == "btn_left") {
         $.fn.fullpage.moveSlideLeft();
-        switch(url[5]){
-        case "secondPage":
-            page=0;
-            break;
-        case "3rdPage":
-            page=1;
-            break;
-        }
-          return;
     }
-    switch(url[5]){
-        case "secondPage":
-            page=1;
-            break;
-        case undefined:
-            page=0;
-            break;
-        case "3rdPage":
-            page=2;
-            break;
-    }
-    if (page == 0) {
-        //첫번째 페이지
-        if (e.id == "student_container") {
-            choice = 1;
-        } else if (e.id == "club_container") {
-            choice = 2;
-        } else if (e.id == "school_container") {
-            choice = 3;
-        }
-    }
-    if (page == 1) {
-        //두번째 페이지
-        var emailId = document.getElementById("input_email");
-        var passwordId = document.getElementById("input_pw");
-        var passwordCheckId = document.getElementById("input_pw_check");
-        var sexName = document.getElementsByName("sex");
-
-        email = emailId.value;
-        var male = sexName[0].checked;
-        var women = sexName[1].checked;
-        if (male) {
-            sex = 1;
-        } else {
-            sex = 0;
-        }
-        if (passwordId.value == passwordCheckId.value) {
-            password = passwordId.value;
-        }
-    }
-    if (page == 2) {
-        alert("가입완료");
-        //이곳에 가입완료 전송 소스
-
-        return;
-    }
+   
     $.fn.fullpage.moveSlideRight();
+}
+var csrftoken;
+/*
+window.onload = function () {
+    $.ajaxSetup({
+        beforeSend: function (xhr, settings) {
+            csrftoken = $.cookie('csrftoken');
+
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+}
+*/
+function upload_img() {
+    $('#id_img').trigger('click');
+}
+
+function change_img() {
+    if($('#id_img')[0].value) {
+        $('#camera')[0].style.display="none";
+        $('#img_mold')[0].style.display="block";
+    }
+    else {
+        $('#camera')[0].style.display="block";
+        $('#img_mold')[0].style.display="none";
+    
+    }
+}
+
+function slideHandler( anchorLink, index, slideAnchor, slideIndex){
+    if(slideIndex==2)
+        {
+            
+        }
+}
+
+function sendData() {
+    var formData = new FormData($('form')[0]);
+    console.log(formData);
+   // for (var i = 0; i < $("input[name=file]")[0].files.length; i++) {
+        //첫번째 파일태그
+   //     formData.append("img", $("input[name=file]")[0].files[i]);
+  //  }
+    
+    formData.append('level',level); 
+    formData.append('img',$("input[name=img]")[0].files[0]);
+    formData.append('csrfmiddlewaretoken',csrftoken);
+    $.ajax({
+        url: '/signup.php',
+        processData: false,
+        contentType: false,
+        data: formData,
+        type: 'POST',
+        success: function (result) {
+        }
+    });
+}
+
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
 }

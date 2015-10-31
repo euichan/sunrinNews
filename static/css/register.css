@@ -366,16 +366,18 @@ div#select_box select#club {
 
 #btn_right {
     float: left;
+    cursor: pointer;
 }
 
 #btn_left {
     float: right;
+    cursor: pointer;
 }
 
 #information_layout_left {
     display: inline-block;
     float: left;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 40%;
     height: 400px;
     padding-top: 100px;
@@ -385,7 +387,7 @@ div#select_box select#club {
 #information_layout_right {
     display: inline-block;
     float: right;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 40%;
     height: 400px;
     padding-top: 100px;
@@ -447,4 +449,19 @@ div#select_box select#club {
     margin: auto;
     width: 80%;
     text-align: center;
+}
+#profile_img {
+    width: 190px;
+    margin: auto;
+    border-radius: 1000px;
+    
+    
+    
+}
+
+#padder {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    padding-top: 100px;
 }

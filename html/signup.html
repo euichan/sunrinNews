@@ -11,13 +11,13 @@
 
 
         <!-- 기본 css 시작 -->
-        <link rel="stylesheet" href="../static/css/main.css">
-        <link rel="stylesheet" href="../static/css/register.css">
-        <link rel="stylesheet" href="../static/css/fb_extra.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/register.css">
+        <!--link rel="stylesheet" href="/static/css/fb_extra.css" deleted by sh-->
 
         <!-- 플페이지 css 시작 -->
-        <link rel="stylesheet" type="text/css" href="../static/css/jquery.fullPage.css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/examples.css"/>
+        <link rel="stylesheet" type="text/css" href="/static/css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="/static/css/examples.css"/>
         <style>
 
             /*todo: css 밖으로 빼기 */
@@ -94,18 +94,28 @@ var console = { log: function() {} };
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.uploadPreview.min.js"></script>
 
         <script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
         <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
-        <script type="text/javascript" src="../static/js/jquery.fullPage.js"></script>
-        <script type="text/javascript" src="../static/js/examples.js"></script>
-        <script type="text/javascript" src="../static/js/register.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="/static/js/examples.js"></script>
+        <script type="text/javascript" src="/static/js/register.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.form.js"></script>
+
         <script type="text/javascript">
             $(document).ready(function () {
                 $('#fullpage').fullpage({
                     sectionsColor: ['#4A6FB1'],
                     css3: true,
+                    afterSlideLoad: slideHandler,
                 });
+                
+                $.uploadPreview({
+                    input_field: "#id_img",
+                    preview_box: "#profile_img",
+                  });
             });
         </script>
 
@@ -113,7 +123,7 @@ var console = { log: function() {} };
 
     <body>
         <div class="register_logo_container">
-            <img src="../static/images/main_logo.png">
+            <img src="/static/images/main_logo.png">
         </div>
 
         <div class = "register_title_container">
@@ -126,19 +136,19 @@ var console = { log: function() {} };
                 <!-- 학생 선택 div 시작 -->
                 <div class="slide active" data-anchor="firstPage">
                     <div class="card_container">
-                        <div id="student_container" class="level_card" onclick="seungie(this)">
-                            <img src="../static/images/student_unfocused.png" class="level_img">
-                            <img src="../static/images/student.png" class="level_img focused">
+                        <div id="student_container" class="level_card" onclick="seungie(this);level=0;">
+                            <img src="/static/images/student_unfocused.png" class="level_img">
+                            <img src="/static/images/student.png" class="level_img focused">
                         </div>
 
-                        <div id="club_container" class="level_card" onclick="seungie(this)">
-                            <img src="../static/images/school_unfocused.png" class="level_img">
-                            <img src="../static/images/school.png" class="level_img focused">
+                        <div id="school_container" class="level_card" onclick="seungie(this);level=2;">
+                            <img src="/static/images/school_unfocused.png" class="level_img">
+                            <img src="/static/images/school.png" class="level_img focused">
                         </div>
 
-                        <div id="school_container" class="level_card" onclick="seungie(this)">
-                            <img src="../static/images/club_unfocused.png" class="level_img">
-                            <img src="../static/images/club.png" class="level_img focused">
+                        <div id="club_container" class="level_card" onclick="seungie(this);level=1;">
+                            <img src="/static/images/club_unfocused.png" class="level_img">
+                            <img src="/static/images/club.png" class="level_img focused">
                         </div>
                     </div>
 
@@ -150,7 +160,7 @@ var console = { log: function() {} };
                 <!-- 정보입력 div 시작 -->
                 <div class="slide" data-anchor="secondPage">
                     <div class="view">
-                        <img src="../static/images/main_logo.png">
+                        <img src="/static/images/main_logo.png">
                     </div>
 
                     <!--note: 이전 디자인 코드 -->
@@ -212,16 +222,13 @@ var console = { log: function() {} };
                     <div id = "information_input_container">
                        <div id = "information_input_topbar">
 
-                           <img id = "btn_left" src="../static/images/register_btn_left.png" onclick="seungie(this)">
-                           <img id = "btn_right" src="../static/images/register_btn_right.png" onclick="seungie(this)">
+                           <img id = "btn_left" src="/static/images/register_btn_left.png" onclick="seungie(this)">
+                           <img id = "btn_right" src="/static/images/register_btn_right.png" onclick="seungie(this)">
                            <div id = "information_input_content">
-                              <form id="id_form">
+                              <form method="POST" id="id_form" enctype="multipart/form-data">
                                    <div id = "information_layout_left">
-                                       <font>이메일</font><br>
-                                            <input type="email" class="input_field full_field" id="id_email" name="email"><br><br><br><br>
-                                       <font>이름</font><br>
-                                            <input type="text" placeholder="성"  class="input_field forty_field" id="id_last_name" name="last_name">
-                                            <input type="text" placeholder="이름"  class="input_field sixty_field" id="id_first_name" name="first_name"><br><br><br><br>
+                                       <font>이메일</font><br><input type="email" class="input_field full_field" id="id_email" name="email"><br><br><br><br>
+                                       <font>이름</font><br><input type="text" placeholder="성"  class="input_field forty_field" id="id_last_name" name="last_name"><input type="text" placeholder="이름"  class="input_field sixty_field" id="id_first_name" name="first_name"><br><br><br><br>
                                        <font>성별</font><br>
                                     <select  class="input_field forty_field_combobox" id="id_gender" name="gender">
                                         <option value="1">남</option>
@@ -237,6 +244,7 @@ var console = { log: function() {} };
                                        <font>비밀번호</font><br><input type="password" class="input_field full_field" id="id_password" name="password"><br><br><br><br>
                                        <font>비밀번호 확인</font><br><input type="password" class="input_field full_field" id="id_password2" name="password2"><br>
                                    </div>
+                                   <input type="file" id="id_img" onchange="change_img()" name="img" style="display:none">
                                </form>
                            </div>
                        </div>
@@ -250,14 +258,29 @@ var console = { log: function() {} };
                 <!-- 프로필 입력 div 시작 -->
                 <div class="slide" data-anchor="3rdPage">
                     <div class="view">
-                        <img src="../static/images/main_logo.png">
+                        <img src="/static/images/main_logo.png">
                     </div>
+                    <input type="button" id="btn_left" value="이전" class="reg_btn third_btn" onclick="seungie(this)">
+                                    <input id="register_finish_btn" value="가입" type="button" class="reg_btn" src="/static/images/register/register_finish_btn.png" onclick="sendData();">
+
                     <div id="information_input_container">
                         <div id="information_input_topbar">
                             <div id="information_input_content">
-                                <input type = "image" src="../static/images/profile_img_btn.png" id = "profile_img_btn">
+                                   
+                                <div id = "padder">
+                                    <div id="profile_img">
+                                <a style="cursor:pointer" onclick="upload_img();">
+                                    <img src="/static/images/profile_img_btn.png" id="camera">
+                                    <img src="/static/images/profile_img_mold.png" style="display:none" id="img_mold">
+                                        
+                                </a>
+                                    </div>
+                                </div>
+                                    
+                                    
                                 <div id = "information_input">
                                     <br>
+
                                     <select class="input_field forty_field_combobox">
                                         <option>남</option>
                                         <option>여</option>
@@ -267,20 +290,18 @@ var console = { log: function() {} };
                                         <option>Layer7</option>
                                         <option>Applepi</option>
                                     </select>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                            <input type="button" id="btn_left" value="이전" class="reg_btn third_btn" onclick="seungie(this)">
-                            <input id="register_finish_btn" type="image" src="../static/images/register/register_finish_btn.png" onclick="seungie(this)">
-                        </div>
+                       </div>
                     </div>
                 </div>
                 <!-- 프로필 입력 div 끝 -->
 
             </div>
         </div>
-
     </body>
 
 </html>
