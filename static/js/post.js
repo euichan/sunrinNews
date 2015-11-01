@@ -56,21 +56,16 @@ function deletePost(obj){
 }
 function clickContent(){
     var bubble=document.getElementsByClassName("bubble")[0];
-    if(buttonCheck==2){
-        buttonCheck=-1;
-        for(var i=0;i<type_btn.length;i++){
-            type_btn[i].style.backgroundColor="#fff";
-            type_btn[i].style.color="#000";
-
-        }
-        bubble.style.display="none";
-        bubbleCheck=true;
-        return 0;
-    }
+    
     buttonCheck=2;
     if(bubbleCheck){
         bubble.style.display="block";
         bubbleCheck=false;
+    }
+    else{
+        bubble.style.display="none";
+        bubbleCheck=true;
+        return;
     }
     
     for(var i=0;i<type_btn.length;i++){
@@ -85,12 +80,30 @@ function clickContent(){
 function post(){
     var date=document.getElementsByClassName("date_tf");
     var error=document.getElementsByClassName("alert")[0];
+    var title=document.getElementById("title");
+    var tag=document.getElementById("tag");
+    
+    if(title.value==""){
+        error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제목을 입력해 주세요!!";
+            $(error).fadeIn(200,function(){
+                setTimeout(function(){$(error).fadeOut(500,function(){});},1000);
+            });
+        return;
+    }
+    if(tag.value==""){
+        error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;태그를 넣어주세요!!";
+            $(error).fadeIn(200,function(){
+                setTimeout(function(){$(error).fadeOut(500,function(){});},1000);
+            });
+        return;
+    }
     for(var i=0;i<date.length;i++){
         if(!isNumber(date[i].value)){
             error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;캘린더 날짜는 날짜 형식에 맞춰서 입력해주세요!";
             $(error).fadeIn(200,function(){
                 setTimeout(function(){$(error).fadeOut(500,function(){});},1000);
             });
+            return;
         }
     }
 }
@@ -104,15 +117,7 @@ function clickPro(){
     if(buttonCheck==2){
         clickContent();
     }
-    if(buttonCheck==1){
-        buttonCheck=-1;
-        for(var i=0;i<type_btn.length;i++){
-            type_btn[i].style.backgroundColor="#fff";
-            type_btn[i].style.color="#000";
-
-        }
-        return 0;
-    }
+    
     buttonCheck=1;
     for(var i=0;i<type_btn.length;i++){
         type_btn[i].style.backgroundColor="#fff";
@@ -126,14 +131,7 @@ function clickNoti(){
         clickContent();
     }
 
-    if(buttonCheck==0){
-        buttonCheck=-1;
-        for(var i=0;i<type_btn.length;i++){
-            type_btn[i].style.backgroundColor="#fff";
-            type_btn[i].style.color="#000";
-        }
-        return 0;
-    }
+    
     buttonCheck=0;
     for(var i=0;i<type_btn.length;i++){
         type_btn[i].style.backgroundColor="#fff";
