@@ -91,15 +91,15 @@ function post(){
             });
         return;
     }
-    if(tag.value==""){
-        error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;태그를 넣어주세요!!";
+    if(count==0){
+        error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이미지를 등록 해주세요!!";
             $(error).fadeIn(200,function(){
                 setTimeout(function(){$(error).fadeOut(500,function(){});},1000);
             });
         return;
     }
     for(var i=0;i<date.length;i++){
-        if(!isNumber(date[i].value)){
+        if(!isNumber(date[i].value)&&buttonCheck==2){
             error.innerHTML="<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;에러!</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;캘린더 날짜는 날짜 형식에 맞춰서 입력해주세요!";
             $(error).fadeIn(200,function(){
                 setTimeout(function(){$(error).fadeOut(500,function(){});},1000);
