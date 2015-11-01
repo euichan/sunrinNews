@@ -57,15 +57,16 @@ function deletePost(obj){
 function clickContent(){
     var bubble=document.getElementsByClassName("bubble")[0];
     
+    if(!bubbleCheck && buttonCheck!=2){
+        bubble.style.display="none";
+        bubbleCheck=true;
+        return;
+    }
+    
     buttonCheck=2;
     if(bubbleCheck){
         bubble.style.display="block";
         bubbleCheck=false;
-    }
-    else{
-        bubble.style.display="none";
-        bubbleCheck=true;
-        return;
     }
     
     for(var i=0;i<type_btn.length;i++){
@@ -115,6 +116,7 @@ function isNumber(s) {
 }
 function clickPro(){
     if(buttonCheck==2){
+        buttonCheck=1;
         clickContent();
     }
     
@@ -128,6 +130,7 @@ function clickPro(){
 }
 function clickNoti(){
     if(buttonCheck==2){
+        buttonCheck=0;
         clickContent();
     }
 
