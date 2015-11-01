@@ -33,8 +33,7 @@
 		 		}
 		 	}
      	  
-                                countNum--;
-
+            count--;
      	    for(i=0; i<this.files.length; i++){
      	    	var reader = new FileReader();
 	    		reader.onload = function (e) {

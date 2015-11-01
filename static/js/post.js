@@ -4,7 +4,6 @@ var addBox;
 var bubbleCheck=true;
 var buttonCheck=0;
 var type_btn;
-var countNum=0;
 window.onload=function(){
     postContentsBox = document.getElementById("post_contents_box");
     addBox = document.getElementById("add_post_box");
