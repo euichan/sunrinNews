@@ -4,10 +4,12 @@ var addBox;
 var bubbleCheck=true;
 var buttonCheck=0;
 var type_btn;
+var countNum=0;
 window.onload=function(){
     postContentsBox = document.getElementById("post_contents_box");
     addBox = document.getElementById("add_post_box");
     type_btn=document.getElementsByClassName("type_btn");
+    $('.file').preimage();
 }
 function seungie_post(obj){
     count++;
@@ -23,7 +25,7 @@ function seungie_post(obj){
     closeButton.setAttribute("onclick","deletePost(this)");
     closeButton.setAttribute("type","image");
     closeButton.setAttribute("class","close_btn");
-    closeButton.setAttribute("src","../images/close.png");
+    closeButton.setAttribute("src","../static/images/close.png");
     postBox.setAttribute("class","post_box");
     imgPostBox.setAttribute("class", "img_post_box");
     postNum.setAttribute("class","post_num");
@@ -39,7 +41,8 @@ function seungie_post(obj){
     postBox.appendChild(imgPostBox);
     postBox.appendChild(textPostBox);
 
-    postContentsBox.insertBefore(postBox,addBox);
+    return postBox;
+
 }
 function deletePost(obj){
     count--;
