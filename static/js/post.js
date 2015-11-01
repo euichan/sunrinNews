@@ -29,8 +29,10 @@ function seungie_post(obj){
     imgPostBox.setAttribute("class", "img_post_box");
     postNum.setAttribute("class","post_num");
     textPostBox.setAttribute("class","text_post_box");
+    
     textArea.setAttribute("rows","5");
     textArea.setAttribute("cols","30");
+    textArea.setAttribute("name","text");
     
     postNum.appendChild(num);
     imgPostBox.appendChild(postNum);
